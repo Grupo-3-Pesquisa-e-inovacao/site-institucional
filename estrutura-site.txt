@@ -1,0 +1,15 @@
+Paginas no site institucional:
+
+Pagina inicial
+Sobre nós 
+Login
+Cadastro
+Dashboard
+ .cadastro de maquina
+ .capturas
+	-CPU
+	-Memoria
+	-Disco
+	-Rede
+ .configurações(adicional)
+Contato
