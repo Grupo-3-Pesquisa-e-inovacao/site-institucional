@@ -1,0 +1,61 @@
+/* CSS - Página principal */
+
+/* --------------- SESSÃO INÍCIO -----------------*/
+.sessao1-inicio {
+    width: 100%;
+    margin-top: 150px;
+    background-image: url(../assets/gradiente_inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sessao1-inicio .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sessao1-inicio h1 {
+    color: #0F240A;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sessao1-inicio h3 {
+    color: #0F240A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.sessao1-inicio .img_inicio {
+    display: flex;
+    justify-content: right;
+}
+
+.sessao1-inicio .texto_inicio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.sessao1-inicio img {
+    width: 1100px;
+    margin-right: -100px;
+    margin-top: -200px;
+    z-index: 1;
+}
+
+.sessao1-inicio .saiba_mais {
+    border-radius: 10px;
+    border: 1px solid #0F3324;
+    background: #FFF;
+    width: 182px;
+    height: 55px;
+}

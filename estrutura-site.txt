@@ -1,7 +1,6 @@
 Paginas no site institucional:
 
 Pagina inicial
-Sobre nós 
 Login
 Cadastro
 Dashboard
@@ -12,4 +11,3 @@ Dashboard
 	-Disco
 	-Rede
  .configurações(adicional)
-Contato
