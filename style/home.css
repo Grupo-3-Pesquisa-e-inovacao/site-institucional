@@ -124,7 +124,7 @@
 
 }
 
-.img-solucao{
+.img-solucao {
     width: 40%;
 }
 
@@ -141,7 +141,7 @@
 
 }
 
-.texto-solucao{
+.texto-solucao {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -153,4 +153,62 @@
 
 .texto-solucao p {
     color: white;
+}
+
+/* --------------- SESSÃO BENEFÍCIOS ---------------*/
+.sessao4-beneficios {
+    padding: 100px 0px;
+}
+
+.sessao4-beneficios h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sessao4-beneficios .content {
+    flex-direction: column;
+}
+
+.sessao4-beneficios .box-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.sessao4-beneficios .card {
+    width: 350px;
+    height: 200px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 9px 12px 37px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.sessao4-beneficios .card img {
+    width: 50px;
+}
+
+.sessao4-beneficios .card p {
+    color: #1E1E1E;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sessao4-beneficios .card h3 {
+    color: #1E1E1E;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
 }
