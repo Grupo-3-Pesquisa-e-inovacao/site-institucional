@@ -7,18 +7,16 @@
     background-image: url(../assets/gradiente_inicio.png);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 10px 4px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
 .sessao1-inicio .content {
-    width: 100%;
-    display: flex;
     flex-direction: column;
 }
 
 .sessao1-inicio h1 {
     color: #0F240A;
-    font-size: 48px;
+    font-size: 45px;
     font-style: normal;
     font-weight: 700;
 }
@@ -58,4 +56,101 @@
     background: #FFF;
     width: 182px;
     height: 55px;
+}
+
+
+/* --------------- SESSÃO PROBLEMA ---------------*/
+.sessao2-problema {
+    padding: 100px 0px;
+}
+
+.sessao2-problema .content {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sessao2-problema .box-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 40px;
+}
+
+.texto-problema {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.img-problema {
+    display: flex;
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 450px;
+    border-radius: 500px;
+    background: #46B17E;
+}
+
+.sessao2-problema img {
+    align-self: center;
+    margin-left: -30px;
+    width: 564.778px;
+    height: 557.747px;
+    transform: rotate(8.898deg);
+}
+
+
+/* --------------- SESSÃO SOLUÇÃO ---------------*/
+
+.sessao3-solucao {
+    padding: 100px 0px;
+    background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.sessao3-solucao .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px 0px;
+
+}
+
+.img-solucao{
+    width: 40%;
+}
+
+.sessao3-solucao img {
+    width: 550px;
+    margin-left: 60px;
+}
+
+.sessao3-solucao .circulo {
+    width: 480px;
+    height: 480px;
+    flex-shrink: 0;
+    fill: rgba(173, 255, 226, 0.62);
+
+}
+
+.texto-solucao{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-solucao h1 {
+    color: white;
+}
+
+.texto-solucao p {
+    color: white;
 }

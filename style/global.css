@@ -13,16 +13,36 @@ a {
     color: black;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    
+
 }
 
-.container{
+.container {
     display: flex;
     margin: auto;
     width: 80%;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+}
+
+.titulo {
+    color: #1E1E1E;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+ p {
+    color: #000;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
 }
