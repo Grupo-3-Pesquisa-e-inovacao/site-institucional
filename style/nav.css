@@ -43,15 +43,6 @@ nav ul li {
     font-weight: 600;
 }
 
-header button {
-    padding: 15px 0px 15px 0px;
-    border-radius: 10px;
-    font-size: 16px;
-    font-weight: 400;
-    cursor: pointer;
-    height: 50px;
-}
-
 header .btt_login {
     width: 110px;
     border: 1px solid #109A68;
@@ -59,11 +50,4 @@ header .btt_login {
     color: #0F240A;
 }
 
-header .btt_cadastro {
-    width: 120px;
-    border-radius: 10px;
-    background: #109A68;
-    color: #ffff;
-    border: none;
-}
 
