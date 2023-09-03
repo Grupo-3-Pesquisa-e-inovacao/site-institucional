@@ -266,3 +266,43 @@
     font-weight: 500;
     line-height: normal;
 }
+
+
+/* --------------- SESSÃO SOBRE NÓS---------------*/
+.sessao6-sobrenos {
+    padding: 100px 0px;
+}
+
+.sessao6-sobrenos .content{
+    flex-direction: column;
+}
+
+.conteudo{
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.pt2{
+    flex-direction: row-reverse;
+}
+
+.pt1 .img-sobrenos  img{
+    width: 300px;
+}
+
+.img-sobrenos img{
+    width: 420px;
+}
+
+.texto-sobrenos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
