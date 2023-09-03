@@ -197,7 +197,6 @@
 
 .sessao4-beneficios .card p {
     color: #1E1E1E;
-    font-family: Montserrat;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -206,9 +205,64 @@
 
 .sessao4-beneficios .card h3 {
     color: #1E1E1E;
-    font-family: Montserrat;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
+    line-height: normal;
+}
+
+/* --------------- SESSÃO RECURSOS---------------*/
+.sessao5-recursos {
+    padding: 100px 0px;
+    background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sessao5-recursos .content {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sessao5-recursos h1 {
+    text-align: center;
+    color: white;
+}
+
+.sessao5-recursos .box-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-recursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.sessao5-recursos .elipse {
+    width: 180px;
+    height: 180px;
+    background-color: #FBF8F8;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-recursos img {
+    width: 140px;
+}
+
+.card-recursos h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
     line-height: normal;
 }
