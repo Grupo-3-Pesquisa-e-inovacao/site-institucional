@@ -46,3 +46,28 @@ a {
     font-weight: 400;
     line-height: 25px;
 }
+
+button {
+    padding: 15px 0px 15px 0px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    height: 50px;
+}
+
+.btt_cadastro {
+    width: 120px;
+    border-radius: 10px;
+    background: #109A68;
+    color: #ffff;
+    border: none;
+}
+
+.btt_saiba_mais {
+    border-radius: 10px;
+    border: 1px solid #0F3324;
+    background: #FFF;
+    width: 182px;
+    height: 55px;
+}
