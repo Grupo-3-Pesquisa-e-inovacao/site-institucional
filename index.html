@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Safe Monitor</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <script src="js/main.js"></script>
+    <link rel="stylesheet" href="./style/homeMobile.css">
 </head>
 
 <body>
@@ -48,6 +51,33 @@
                     <button class="btt_login">Login</button>
 
                 </div> <!--login-cadastro-->
+
+            </div> <!-- content -->
+
+        </div> <!-- container -->
+
+    </header>
+
+    <header id="headerMobile">
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="logo">
+                    <img src="assets/logo/logo_horizontal.png" alt="">
+                </div> <!--logo-->
+
+                <li id="iconmenuperfil" class="material-symbols-outlined" onclick="clickPerfil()">
+                    menu
+                </li>
+                <!-- <div class="buttons_menu">
+
+                    <button class="btt_cadastro">Cadastro</button>
+
+                    <button class="btt_login">Login</button>
+
+                </div> login-cadastro -->
 
             </div> <!-- content -->
 
@@ -100,17 +130,30 @@
                     segurança cibernética...
                 </h1>
 
-                <div class="box-conteudo">
 
-                    <div class="texto-problema">
+
+                <div class="texto-problema">
+
+                    <div id="separacao">
                         <p>são apenas alguns dos desafios que as faculdades de tecnologia e outras instituições
                             enfrentam regularmente.</p>
 
+                        <div class="img-problema">
+                            <div class="circulo">
+                                <img src="./assets/notebook_alerta.png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="separacao2">
                         <p>A manutenção preventiva e a identificação proativa de problemas de desempenho em computadores
                             individuais são tarefas desafiadoras e consomem tempo. Os administradores de TI muitas vezes
-                            são forçados a agir apenas quando ocorre uma falha.
-                        </p>
+                            são forçados a agir apenas quando ocorre uma falha.</p>
 
+                    </div>
+
+                    <div id="separacao2">
                         <p>
                             Além disso, a diversidade de hardware e software utilizados em ambientes de ensino torna
                             difícil monitorar e manter todos os sistemas de forma eficaz. Placas de rede, CPUs, memória
@@ -120,12 +163,11 @@
                         </p>
                     </div>
 
-                    <div class="img-problema">
-                        <div class="circulo">
-                            <img src="./assets/notebook_alerta.png" alt="">
-                        </div>
 
-                    </div>
+
+
+
+
                 </div>
 
             </div><!-- content -->
@@ -143,26 +185,38 @@
 
             <div class="content">
 
-                <div class="img-solucao">
-                    <div class="circulo">
+                <div class="conteudoContent">
 
-                        <img src="./assets/solucao.png" alt="">
+                    <div class="texto-solucao">
 
+                        <div class="divParaCentralizar">
+                            <div class="tituloSolucao">
+                                <h1 class="titulo">Conheça a Solução Definitiva para a Excelência Tecnológica na sua
+                                    Instituição de Ensino</h1>
+                            </div>
+                        </div>
+                        <div class="divParaCentralizar">
+                            <div class="img-solucao">
+                                <div class="circulo">
+
+                                    <img src="./assets/solucao.png" alt="">
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <p>Tenha uma visibilidade completa sobre o desempenho de cada computador em toda a instituição.
+                        </p>
+
+                        <p>Estamos aqui para revolucionar a forma como as faculdades de tecnologia e instituições
+                            educacionais lidam com esses desafios de TI, transformando-os em oportunidades para um
+                            ambiente
+                            de ensino e administração mais eficaz</p>
                     </div>
+
+
+
                 </div>
-
-                <div class="texto-solucao">
-
-                    <h1 class="titulo">Conheça a Solução Definitiva para a Excelência Tecnológica na sua Instituição de
-                        Ensino</h1>
-
-                    <p>Tenha uma visibilidade completa sobre o desempenho de cada computador em toda a instituição.</p>
-
-                    <p>Estamos aqui para revolucionar a forma como as faculdades de tecnologia e instituições
-                        educacionais lidam com esses desafios de TI, transformando-os em oportunidades para um ambiente
-                        de ensino e administração mais eficaz</p>
-                </div>
-
 
             </div><!-- content -->
 
@@ -179,43 +233,52 @@
 
             <div class="content">
 
-                <h1 class="titulo">Por que escolher nossa solução?</h1>
+                <div class="contentSessao4">
 
-                <div class="box-conteudo">
-                    <div class="card">
-                        <img src="./assets/recursos_icons/cadastro.png" alt="">
-                        <h3>Cadastro de Máquinas e Salas</h3>
-                        <p>Facilite organização e o gerenciamento dos computadores. </p>
+                    <div class="tituloSessao4">
+
+                        <h1 class="titulo">Por que escolher nossa solução?</h1>
+
                     </div>
 
-                    <div class="card">
-                        <img src="./assets/recursos_icons/segurança.png" alt="">
-                        <h3>Segurança Cibernética</h3>
-                        <p>Monitore sobre atividades suspeitas que possam indicar violações de segurança.</p>
-                    </div>
 
-                    <div class="card">
-                        <img src="./assets/recursos_icons/relatóriso.png" alt="">
-                        <h3>Relatórios Detalhados</h3>
-                        <p>Gere relatórios detalhados sobre o desempenho e a integridade dos computadores.</p>
-                    </div>
+                    <div class="box-conteudo">
+                        <div class="card">
+                            <img src="./assets/recursos_icons/cadastro.png" alt="">
+                            <h3>Cadastro de Máquinas e Salas</h3>
+                            <p>Facilite organização e o gerenciamento dos computadores. </p>
+                        </div>
 
-                    <div class="card">
-                        <img src="./assets/recursos_icons/notificações.png" alt="">
-                        <h3>Notificações em Tempo Real</h3>
-                        <p>Alertas para os administradores de TI sobre problemas de desempenho.</p>
-                    </div>
+                        <div class="card">
+                            <img src="./assets/recursos_icons/segurança.png" alt="">
+                            <h3>Segurança Cibernética</h3>
+                            <p>Monitore sobre atividades suspeitas que possam indicar violações de segurança.</p>
+                        </div>
 
-                    <div class="card">
-                        <img src="./assets/recursos_icons/suporte.png" alt="">
-                        <h3>Suporte Integrado</h3>
-                        <p>Tenha acesso direto ao suporte técnico por meio do sistema.</p>
-                    </div>
+                        <div class="card">
+                            <img src="./assets/recursos_icons/relatóriso.png" alt="">
+                            <h3>Relatórios Detalhados</h3>
+                            <p>Gere relatórios detalhados sobre o desempenho e a integridade dos computadores.</p>
+                        </div>
 
-                    <div class="card">
-                        <img src="./assets/recursos_icons/historico.png" alt="">
-                        <h3>Histórico de Funcionamento</h3>
-                        <p>Registro completo do histórico de funcionamento de cada computador.</p>
+                        <div class="card">
+                            <img src="./assets/recursos_icons/notificações.png" alt="">
+                            <h3>Notificações em Tempo Real</h3>
+                            <p>Alertas para os administradores de TI sobre problemas de desempenho.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/recursos_icons/suporte.png" alt="">
+                            <h3>Suporte Integrado</h3>
+                            <p>Tenha acesso direto ao suporte técnico por meio do sistema.</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="./assets/recursos_icons/historico.png" alt="">
+                            <h3>Histórico de Funcionamento</h3>
+                            <p>Registro completo do histórico de funcionamento de cada computador.</p>
+                        </div>
+
                     </div>
                 </div>
 
@@ -238,29 +301,37 @@
 
                 <div class="box-conteudo">
 
-                    <div class="card-recursos">
-                        <div class="elipse">
-                            <img src="./assets/monitoramento_icons/memoria.png" alt="">
+                    <div class="separacaoSessao5">
+
+                        <div class="card-recursos">
+                            <div class="elipse">
+                                <img src="./assets/monitoramento_icons/memoria.png" alt="">
+                            </div>
+                            <h3>Memória</h3>
                         </div>
-                        <h3>Memória</h3>
+
+                        <div class="card-recursos">
+                            <div class="elipse"><img src="./assets/monitoramento_icons/rede.png" alt="">
+                            </div>
+                            <h3>Rede</h3>
+                        </div>
+
                     </div>
 
-                    <div class="card-recursos">
-                        <div class="elipse"><img src="./assets/monitoramento_icons/rede.png" alt="">
-                        </div>
-                        <h3>Rede</h3>
-                    </div>
+                    <div class="separacaoSessao5">
 
-                    <div class="card-recursos">
-                        <div class="elipse"><img src="./assets/monitoramento_icons/disco.png" alt="">
+                        <div class="card-recursos">
+                            <div class="elipse"><img src="./assets/monitoramento_icons/disco.png" alt="">
+                            </div>
+                            <h3>Disco</h3>
                         </div>
-                        <h3>Disco</h3>
-                    </div>
 
-                    <div class="card-recursos">
-                        <div class="elipse"><img src="./assets/monitoramento_icons/cpu.png" alt="">
+                        <div class="card-recursos">
+                            <div class="elipse"><img src="./assets/monitoramento_icons/cpu.png" alt="">
+                            </div>
+                            <h3>CPU</h3>
                         </div>
-                        <h3>CPU</h3>
+
                     </div>
 
                 </div>
@@ -280,44 +351,33 @@
 
             <div class="content">
 
-                <h1 class="titulo">Sobre nós</h1>
+                <div class="tituloSessao6">
+                <h1>Sobre nós</h1>
+                </div>
+
+                <div class="img-sobrenos">
+                    <img src="./assets/logo/logo_SafeMonitor.png" alt="">
+                </div>
 
                 <div class="conteudo pt1">
-                    <div class="texto-sobrenos">
-                        <p>
-                            Entendemos a importância da tecnologia na educação moderna. Nosso compromisso é assegurar
-                            que as instituições de ensino possam concentrar seus esforços em proporcionar uma
-                            experiência educacional de alta qualidade, sem serem sobrecarregadas por problemas de TI.
-                        </p>
+                    <p>
+                        Entendemos a importância da tecnologia na educação moderna. Nosso compromisso é assegurar que as instituições de ensino possam concentrar seus esforços em proporcionar uma experiência educacional de alta qualidade, sem serem sobrecarregadas por problemas de TI.
+                    </p>
 
-                        <p>
-                            Buscamos ser líderes na entrega de soluções de monitoramento de última geração, capacitando
-                            instituições de ensino a alcançar excelência tecnológica e aprimorar a experiência de
-                            aprendizado para seus alunos.
-                        </p>
-                    </div>
-                    <div class="img-sobrenos">
-                        <img src="./assets/logo/logo_SafeMonitor.png">
-                    </div>
+                    <p>
+                        Buscamos ser líderes na entrega de soluções de monitoramento de última geração, capacitando instituições de ensino a alcançar excelência tecnológica e aprimorar a experiência de aprendizado para seus alunos.
+                    </p>
+                </div>
+
+                <div class="img-sobrenos-sala-grande">
+                    <img src="./assets/sobre_nos.png" alt="">
                 </div>
 
                 <div class="conteudo pt2">
-                    <div class="texto-sobrenos">
-                        <p>
-                            Na Safe Monitor, somos impulsionados pela paixão por melhorar a eficiência e a
-                            confiabilidade dos sistemas de tecnologia da informação nas instituições de ensino.
-                        </p>
+                    <p>Na Safe Monitor, somos impulsionados pela paixão por melhorar a eficiência e a confiabilidade dos sistemas de tecnologia da informação nas instituições de ensino.</p>
 
-                        <p>
-                            Nossa missão é fornecer soluções de monitoramento avançadas que transformem desafios
-                            tecnológicos em oportunidades para o sucesso educacional Na Safe Monitor, nossa paixão pela
-                            inovação, excelência técnica e serviço excepcional são os pilares de nossa cultura. Estamos
-                            dedicados a superar expectativas e a contribuir para o sucesso de nossos clientes.
-                        </p>
-                    </div>
-                    <div class="img-sobrenos">
-                        <img src="./assets/sobre_nos.png">
-                    </div>
+                    <p>Nossa missão é fornecer soluções de monitoramento avançadas que transformem desafiostecnológicos em oportunidades para o sucesso educacional Na Safe Monitor, nossa paixão pela inovação, excelência técnica e serviço excepcional são os pilares de nossa cultura. Estamos dedicados a superar expectativas e a contribuir para o sucesso de nossos clientes.</p>
+                    
                 </div>
             </div><!-- content -->
 
@@ -334,8 +394,7 @@
 
             <div class="content">
 
-                <h1>Junte-se a nós na transformação do futuro da educação tecnológica. Estamos ansiosos para fazer
-                    parceria com você e impulsionar o sucesso da sua instituição de ensino.</h1>
+                <h1>Junte-se a nós na transformação do futuro da educação tecnológica. Estamos ansiosos para fazer parceria com você e impulsionar o sucesso da sua instituição de ensino.</h1>
 
                 <button class="btt_saiba_mais">
                     Cadastre - se
@@ -357,17 +416,17 @@
             <div class="content">
 
                 <h5 class="endereco">
-                    Rua Haddock Lobo,  <br>
+                    Rua Haddock Lobo, <br>
                     São Paulo - SP <br>
                     CEP 04011 - 001
                 </h5>
 
                 <div class="icons-contato">
                     <i class="bi bi-facebook icon"></i>
-                    <i  class="bi bi-instagram icon" ></i>
-                    <i  class="bi bi-twitter icon"></i>
+                    <i class="bi bi-instagram icon"></i>
+                    <i class="bi bi-twitter icon"></i>
                     <i class="bi bi-telephone-fill icon"></i>
-                    <i  class="bi bi-envelope-fill icon"></i>
+                    <i class="bi bi-envelope-fill icon"></i>
                 </div>
 
                 <div class="logo">
