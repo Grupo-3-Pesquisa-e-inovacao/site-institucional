@@ -24,28 +24,32 @@
 
                 <nav>
                     <ul>
-                        <a href="">
+                        <a href="#home">
                             <li>Home</li>
                         </a>
-                        <a href="">
+                        <a href="#solucao">
                             <li>Solução</li>
                         </a>
-                        <a href="">
-                            <li>Benefícios</li>
+                        <a href="#beneficios">
+                            <li>Beneficios</li>
                         </a>
-                        <a href=""></a>
-                        <li>Recursos</li></a>
-                        <a href="">
-                            <li>Sobre nós</li>
+                        <a href="#recursos">
+                            <li>Recursos</li>
+                        </a>
+                        <a href="#sobre">
+                            <li>Sobre Nós</li>
+                        </a>
+                        <a href="./pages/contato.html">
+                            <li>Contato</li>
                         </a>
                     </ul>
                 </nav>
 
                 <div class="buttons_menu">
 
-                    <button class="btt_cadastro">Cadastro</button>
+                    <button class="btt_cadastro" onclick="acessarCadastro()">Cadastro</button>
 
-                    <button class="btt_login">Login</button>
+                    <button class="btt_login" onclick="acessarLogin()">Login</button>
 
                 </div> <!--login-cadastro-->
 
@@ -58,7 +62,7 @@
 
 
     <!-- COMEÇO - SESSÃO 1 - ÍNICIO -->
-    <section class="sessao1-inicio">
+    <section class="sessao1-inicio" id="home">
 
         <div class="container">
 
@@ -137,7 +141,7 @@
 
 
     <!-- COMEÇO - SESSÃO 3 - SOLUÇÃO -->
-    <section class="sessao3-solucao">
+    <section class="sessao3-solucao" id="solucao">
 
         <div class="container">
 
@@ -173,7 +177,7 @@
 
 
     <!-- COMEÇO - SESSÃO 4 - BENEFÍCIOS -->
-    <section class="sessao4-beneficios">
+    <section class="sessao4-beneficios" id="beneficios">
 
         <div class="container">
 
@@ -228,7 +232,7 @@
 
 
     <!-- COMEÇO - SESSÃO 5 - RECURSOS -->
-    <section class="sessao5-recursos">
+    <section class="sessao5-recursos" id="recursos">
 
         <div class="container">
 
@@ -274,7 +278,7 @@
 
 
     <!-- COMEÇO - SESSÃO 6 - SOBRE NÓS -->
-    <section class="sessao6-sobrenos">
+    <section class="sessao6-sobrenos" id="sobre">
 
         <div class="container">
 
@@ -388,7 +392,8 @@
 
 
 
-
 </body>
+
+    <script src="./js/main.js"></script>
 
 </html>
