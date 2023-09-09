@@ -21,6 +21,11 @@ a {
 
 }
 
+section{
+    width: 100%;
+}
+
+
 .container {
     display: flex;
     margin: auto;
@@ -54,6 +59,7 @@ button {
     font-weight: 400;
     cursor: pointer;
     height: 50px;
+    transition: all 0.3s ease 0s;
 }
 
 .btt_cadastro {
@@ -71,3 +77,13 @@ button {
     width: 182px;
     height: 55px;
 }
+
+button:hover{
+    transform: translateY(-7px);                  
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+

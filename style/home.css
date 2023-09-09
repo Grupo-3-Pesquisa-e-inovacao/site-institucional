@@ -180,8 +180,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transition: all 0.3s ease 0s;
 
 }
+
+.card:hover{
+    transform: translateY(-7px);        
+}
+
+.card:active {
+    transform: translateY(-1px);
+}
+
+
 
 .sessao4-beneficios .card img {
     width: 50px;
