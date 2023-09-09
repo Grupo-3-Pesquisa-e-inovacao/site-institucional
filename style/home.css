@@ -1,6 +1,12 @@
 /* CSS - Página principal */
 
 /* --------------- SESSÃO INÍCIO -----------------*/
+.ConteudoMobile{
+    display: none;
+}
+
+
+
 .sessao1-inicio {
     width: 100%;
     margin-top: 150px;
