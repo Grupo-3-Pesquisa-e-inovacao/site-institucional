@@ -1,5 +1,4 @@
-let usuario = document.getElementById('usuario')
-let senha = document.getElementById('usuario')
+
 
 let listaUsuarios = 
 [{usuario: 'alexandre',
@@ -10,12 +9,23 @@ senha: 83392},
 senha: 99283}]
 
 function validarLogin() {
+    let usuario = document.getElementById('email').value
+    let senha = document.getElementById('pass').value
+
     for(let i = 0; i < listaUsuarios.length; i++) {
-        if(listaUsuarios[i].usuario === usuario && listaUsuarios[i].senha === senha) {
-            console.log("login bem sussedido")
+        if(listaUsuarios[i].usuario == usuario && listaUsuarios[i].senha == senha) {
+            alert("login bem sussedido")
             return
         } else {
-            console.log("Usuario ou senha incorretos")
+            alert("Login ou senha incorretos.") 
         }
     }
 }
+
+function acessarLogin() {
+    window.location.replace("./login.html");
+  }
+
+  function acessarCadastro() {
+    window.location.replace("./cadastro.html");
+  }

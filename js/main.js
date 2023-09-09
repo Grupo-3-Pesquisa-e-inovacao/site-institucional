@@ -13,3 +13,11 @@ window.addEventListener("scroll", function () {
     }
   })
   
+
+  function acessarLogin() {
+    window.location.replace("./pages/login.html");
+  }
+
+  function acessarCadastro() {
+    window.location.replace("./pages/cadastro.html");
+  }
