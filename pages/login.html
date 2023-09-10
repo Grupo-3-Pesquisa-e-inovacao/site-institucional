@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Safe Monitor</title>
     <link rel="stylesheet" href="../style/style.css">
 </head>
+
 <body>
     <header id="header" style="position: relative;">
 
@@ -34,7 +36,7 @@
                         <a href="../index.html">
                             <li>Sobre Nós</li>
                         </a>
-                        <a href="./">
+                        <a href="./contato.html">
                             <li>Contato</li>
                         </a>
                     </ul>
@@ -56,45 +58,54 @@
     </header>
 
     <section class="login">
-        <div class="form-container">
-            <div class="login-box">
-                <div class="box-1">
-                    <h1>Faça o login</h1>
-                    <p>Seja bem - vindo de volta!</p>
-                </div>
-                <div class="box-2">
-                    <label for="email">Email</label>
-                    <input type="text" id="email">
-
-                    <label for="pass">Senha</label>
-                    <input type="password" id="pass">
-                
-                    <div class="options">
-                        <div class="container">
-                            <input type="checkbox" name="remenb" id="remenb" style="width: 14px; height: 14px; margin-right: 4px;">
-                            <label for="remenb" style="font-size: 16px;">Lembre de mim</label>
-                        </div>
-
-                        <div class="container">
-                            <a href="">Esqueceu a senha?</a>
-                        </div>
-                    </div>    
-                </div>
-                <div class="box-3">
-                    <button class="btt_cadastro" style="width: 100%;" onclick="validarLogin()">
-                        Entrar 
-                    </button>
-                    <div class="register">
-                        <p>
-                            Não possue uma conta? <a href="../pages/cadastro.html">Cadastre - se</a>
-                        </p>
+        <div class="container">
+            <div class="form-container">
+                <div class="login-box">
+                    <div class="box-1">
+                        <h1>Faça o login</h1>
+                        <p>Seja bem - vindo de volta!</p>
                     </div>
+                    <div class="box-2">
+
+                        <label class="box_form">
+                            <label for="email">Email</label>
+                            <input type="text" id="email" placeholder="Seu email">
+                        </label>
+
+                        <label class="box_form">
+                            <label for="pass">Senha</label>
+                            <input type="password" id="pass" placeholder="Sua senha">
+                        </label>
+
+                        <div class="options">
+                            <div class="container">
+                                <input type="checkbox" name="remenb" id="remenb"
+                                    style="width: 14px; height: 14px; margin-right: 4px;">
+                                <label for="remenb" style="font-size: 16px;">Lembre de mim</label>
+                            </div>
+
+                            <div class="container">
+                                <a href="">Esqueceu a senha?</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-3">
+                        <button class="btt_cadastro" style="width: 100%;" onclick="validarLogin()">
+                            Entrar
+                        </button>
+                        <div class="register">
+                            <p>
+                                Não possue uma conta? <a href="../pages/cadastro.html">Cadastre - se</a>
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
-                
             </div>
-        </div>
-        <div class="img-container">
-            <img src="../assets/login.svg" alt="">
+
+            <div class="img-container">
+                <img src="../assets/login.svg" alt="">
+            </div>
         </div>
     </section>
 
@@ -105,17 +116,17 @@
             <div class="content">
 
                 <h5 class="endereco">
-                    Rua Haddock Lobo,  <br>
+                    Rua Haddock Lobo, <br>
                     São Paulo - SP <br>
                     CEP 04011 - 001
                 </h5>
 
                 <div class="icons-contato">
                     <i class="bi bi-facebook icon"></i>
-                    <i  class="bi bi-instagram icon" ></i>
-                    <i  class="bi bi-twitter icon"></i>
+                    <i class="bi bi-instagram icon"></i>
+                    <i class="bi bi-twitter icon"></i>
                     <i class="bi bi-telephone-fill icon"></i>
-                    <i  class="bi bi-envelope-fill icon"></i>
+                    <i class="bi bi-envelope-fill icon"></i>
                 </div>
 
                 <div class="logo">
@@ -127,6 +138,7 @@
 
     </footer>
 </body>
+
 </html>
 
 <script src="../js/login.js"></script>

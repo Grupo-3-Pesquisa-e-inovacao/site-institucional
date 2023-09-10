@@ -33,6 +33,7 @@
 .sessao1-inicio .img_inicio {
     display: flex;
     justify-content: right;
+    z-index: 0;
 }
 
 .sessao1-inicio .texto_inicio {
@@ -47,7 +48,7 @@
     width: 1100px;
     margin-right: -100px;
     margin-top: -200px;
-    z-index: 1;
+    z-index: 0;
 }
 
 
