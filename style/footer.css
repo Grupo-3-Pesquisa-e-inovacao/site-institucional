@@ -28,3 +28,16 @@ footer .icon{
 footer .logo img{
     width: 200px;
 }
+
+.icons-contato i{
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+.icons-contato i:hover{
+    transform: translateY(-7px);        
+}
+
+.icons-contato i:active {
+    transform: translateY(-1px);
+}

@@ -180,8 +180,19 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    transition: 0.6s;
 
 }
+
+.card:hover{
+    transform: translateY(-7px);        
+}
+
+.card:active {
+    transform: translateY(-1px);
+}
+
+
 
 .sessao4-beneficios .card img {
     width: 50px;
@@ -244,10 +255,27 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: 0.6s;
 }
 
 .card-recursos img {
     width: 140px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .card-recursos h3 {
