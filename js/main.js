@@ -1,3 +1,4 @@
+
 //QUANDO OCORRER O EVENTO DE ROLAGEM, EXECUTAR FUNÇÃO
 window.addEventListener("scroll", function () {
     //CAPTURAR A HEADER DO HTML
@@ -13,3 +14,11 @@ window.addEventListener("scroll", function () {
     }
   })
   
+  // MENU FLUTUANTE
+
+function mostrarMenu() {
+  let menuScreen = document.getElementById("menu-screen")
+  menuScreen.classList.toggle("active")
+}
+
+

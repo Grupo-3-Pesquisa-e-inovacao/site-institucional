@@ -51,6 +51,27 @@
         flex-direction: column;
     }
 
+    /* COMEÇO MENU FLUTUANTE */
+    .menuflutuante {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        width: 22%;
+        height: 34%;
+        left: 68%;
+        top: 6%
+    }
+    
+    .blocomenuflu {
+        display: flex;
+        position: absolute;
+        background-color: #303030f3;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    /* FIM MENU FLUTUANTE */
+
     .titulo {
         color: #1E1E1E;
         font-size: 20px;

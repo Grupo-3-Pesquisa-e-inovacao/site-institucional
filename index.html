@@ -58,38 +58,49 @@
 
     </header>
 
-    <header id="headerMobile">
+    <div class="header-mobile">
 
-        <div class="container">
+        <div class="mobile-logo">
+            <img src="./assets/logo/monitor_logo_mobile.png" alt="">
+        </div>
+        <div class="hb-menu" onclick="mostrarMenu()">
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+            <div class="stripe"></div>
+        </div>
 
-            <div class="content">
+    </div>
 
-                <div class="logo">
-                    <img src="assets/logo/logo_horizontal.png" alt="">
-                </div> <!--logo-->
+    <div class="menu-screen" id="menu-screen">
+        <ul>
+            <a href="#home" onclick="mostrarMenu()">
+                <li>Home</li>
+            </a>
+            <a href="#solucao" onclick="mostrarMenu()">
+                <li>Solução</li>
+            </a>
+            <a href="#beneficios" onclick="mostrarMenu()">
+                <li>Benefícios</li>
+            </a>
+            <a href="#recursos" onclick="mostrarMenu()">
+                <li>Recursos</li>
+            </a>
+            <a href="#sobrenos" onclick="mostrarMenu()">
+                <li>Sobre nós</li>
+            </a>
 
-                <li id="iconmenuperfil" class="material-symbols-outlined" onclick="clickPerfil()">
-                    menu
-                </li>
-                <!-- <div class="buttons_menu">
+            
+                <button class="btnLogin"><a href="./pages/login.html">Login</a></button>
+                <button class="btnCadastro"><a href="./pages/login.html">Cadastre-se</a></button>
+            
 
-                    <button class="btt_cadastro">Cadastro</button>
-
-                    <button class="btt_login">Login</button>
-
-                </div> login-cadastro -->
-
-            </div> <!-- content -->
-
-        </div> <!-- container -->
-
-    </header>
-    <!-- FIM -  HEADER -->
+        </ul>
+    </div>
 
     <!-- COMEÇO - CONTEUDO - DESKTOP - INICIO -->
 
     <div class="ConteudoDeskTop">
-        <section class="sessao1-inicio">
+        <section class="sessao1-inicio" id="home">
 
             <div class="container">
 
@@ -120,7 +131,7 @@
 
 
         <!-- COMEÇO - SESSÃO 2 - PROBLEMA -->
-        <section class="sessao2-problema">
+        <section class="sessao2-problema" id="">
 
             <div class="container">
 
@@ -173,7 +184,7 @@
 
 
         <!-- COMEÇO - SESSÃO 3 - SOLUÇÃO -->
-        <section class="sessao3-solucao">
+        <section class="sessao3-solucao" id="solucao">
 
             <div class="container">
 
@@ -212,7 +223,7 @@
 
 
         <!-- COMEÇO - SESSÃO 4 - BENEFÍCIOS -->
-        <section class="sessao4-beneficios">
+        <section class="sessao4-beneficios" id="beneficios">
 
             <div class="container">
 
@@ -267,7 +278,7 @@
 
 
         <!-- COMEÇO - SESSÃO 5 - RECURSOS -->
-        <section class="sessao5-recursos">
+        <section class="sessao5-recursos" id="recursos">
 
             <div class="container">
 
@@ -313,7 +324,7 @@
 
 
         <!-- COMEÇO - SESSÃO 6 - SOBRE NÓS -->
-        <section class="sessao6-sobrenos">
+        <section class="sessao6-sobrenos" id="sobrenos">
 
             <div class="container">
 
@@ -775,5 +786,8 @@
 
 
 </body>
+
+
+<script src="./js/main.js"></script>
 
 </html>
