@@ -1,16 +1,20 @@
 .contato {
+    padding: 100px 0px;
     position: relative;
     width: 100%;
-    height: 90vh;
     display: flex;
     align-content: center;
     justify-content: center;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
 }
 
+.contato .text-container img{
+   width: 400px;
+}
+
 .contato .text-container {
+    width: 100%;
     position: relative;
-    width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -48,40 +52,8 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
     padding: 20px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 6px;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
-}
-
-.contato .form-container .form .field {
-    position: relative;
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-}
-
-.contato .form-container .form .field label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.8);
-}
-
-
-
-.contato .form-container .form .field input {
-    position: relative;
-    width: 100%;
-    height: 42px;
-    border-radius: 4px;
-    border: 1px solid rgba(0, 0, 0, 0.4);
-    margin-bottom: 18px;
-    padding: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.8);
 }

@@ -15,9 +15,18 @@ window.addEventListener("scroll", function () {
   
 
   function acessarLogin() {
-    window.location.replace("./pages/login.html");
+    window.location.replace("./login.html");
   }
 
   function acessarCadastro() {
+    window.location.replace("./cadastro.html");
+  }
+
+
+  function acessarCadastroDiretorio() {
     window.location.replace("./pages/cadastro.html");
+  }  
+  
+  function acessarLoginDiretorio() {
+    window.location.replace("./pages/login.html");
   }
