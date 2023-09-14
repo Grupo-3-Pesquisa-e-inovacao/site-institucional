@@ -78,7 +78,6 @@ nav li:hover::before {
 }
 
 .header-mobile {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
