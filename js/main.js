@@ -30,3 +30,10 @@ window.addEventListener("scroll", function () {
   function acessarLoginDiretorio() {
     window.location.replace("./pages/login.html");
   }
+
+
+// MENU FLUTUANTE
+function mostrarMenu() {
+  let menuScreen = document.getElementById("menu-screen")
+  menuScreen.classList.toggle("active")
+}
