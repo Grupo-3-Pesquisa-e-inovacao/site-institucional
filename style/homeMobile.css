@@ -1,0 +1,808 @@
+/* CSS - Página principal */
+
+@media only screen and (max-width: 600px) {
+
+
+    body {
+        max-width: 100%;
+    }
+
+
+    .ConteudoMobile {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ConteudoDeskTop {
+        display: none;
+    }
+
+
+    .titulo {
+        color: #1E1E1E;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .container {
+        display: flex;
+        margin: auto;
+        width: 80%;
+    }
+
+    .content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contentSessao4 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteudoContent {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* COMEÇO MENU FLUTUANTE */
+    .menuflutuante {
+        display: none;
+        z-index: 2;
+        position: absolute;
+        width: 22%;
+        height: 34%;
+        left: 68%;
+        top: 6%
+    }
+    
+    .blocomenuflu {
+        display: flex;
+        position: absolute;
+        background-color: #303030f3;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    /* FIM MENU FLUTUANTE */
+
+    .titulo {
+        color: #1E1E1E;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .separacaoSessao5 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* --------------- SESSÃO INÍCIO -----------------*/
+    .sessao1-inicio {
+        width: 100%;
+        margin-top: 150px;
+        background-image: url(../assets/gradiente_inicio.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .sessao1-inicio .content {
+        flex-direction: column;
+    }
+
+    .sessao1-inicio h1 {
+        color: #0F240A;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .sessao1-inicio h3 {
+        color: #0F240A;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+
+    }
+
+    .sessao1-inicio .img_inicio {
+        display: flex;
+        justify-content: right;
+        background-size: cover;
+    }
+
+    .sessao1-inicio .texto_inicio {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+    .sessao1-inicio img {
+        width: 270px;
+        margin-right: -60px;
+        margin-top: -200px;
+        z-index: 1;
+    }
+
+
+    /* --------------- SESSÃO PROBLEMA ---------------*/
+    .sessao2-problema {
+        padding: 100px 0px;
+    }
+
+    .separacaoDivs {
+        width: 100%;
+        display: flex;
+    }
+
+    .sessao2-problema .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sessao2-problema .box-conteudo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        gap: 40px;
+    }
+
+    .texto-problema {
+        width: 100%;
+        display: flex;
+    }
+
+    #separacao {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    h1.titulo {
+        font-size: 20px;
+    }
+
+    .img-problema {
+        margin-left: 10px;
+        display: flex;
+        height: 150px;
+
+    }
+
+    .circulo {
+
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        border-radius: 500px;
+        background: #46B17E;
+
+    }
+
+    .sessao2-problema img {
+        display: flex;
+        align-self: center;
+        margin-left: -30px;
+        width: 200px;
+        height: 200px;
+        transform: rotate(8.898deg);
+    }
+
+
+    /* --------------- SESSÃO SOLUÇÃO ---------------*/
+
+    .sessao3-solucao {
+        padding: 10px 0px;
+        background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+    }
+
+    .sessao3-solucao .content {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        padding: 20px 0px;
+
+    }
+
+    .img-solucao {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sessao3-solucao img {
+        width: 250px;
+        margin-right: 45px;
+    }
+
+    .sessao3-solucao .circulo {
+        width: 250px;
+        height: 250px;
+        fill: rgba(173, 255, 226, 0.62);
+
+    }
+
+    .texto-solucao {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divParaCentralizar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tituloSolucao {
+        display: flex;
+        width: 70%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .tituloSessao6 {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+
+    .texto-solucao h1 {
+        color: white;
+    }
+
+    .texto-solucao p {
+        color: white;
+    }
+
+    /* --------------- SESSÃO BENEFÍCIOS ---------------*/
+    .sessao4-beneficios {
+        padding: 20px 0px;
+    }
+
+    .sessao4-beneficios h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .sessao4-beneficios .content {
+        flex-direction: column;
+    }
+
+
+    .sessao4-beneficios .card {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 9px 12px 37px 0px rgba(0, 0, 0, 0.12);
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+    .sessao4-beneficios .card img {
+        width: 50px;
+    }
+
+    .sessao4-beneficios .card p {
+        color: #1E1E1E;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .sessao4-beneficios .card h3 {
+        color: #1E1E1E;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+    /* --------------- SESSÃO RECURSOS---------------*/
+    .sessao5-recursos {
+        padding: 100px 0px;
+        background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .sessao5-recursos .content {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .sessao5-recursos h1 {
+        font-size: 30px;
+        text-align: center;
+        color: white;
+    }
+
+    .sessao5-recursos .box-conteudo {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .card-recursos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        color: white;
+    }
+
+    .sessao5-recursos .elipse {
+        width: 180px;
+        height: 180px;
+        background-color: #FBF8F8;
+        border-radius: 50%;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-recursos img {
+        width: 140px;
+    }
+
+    .card-recursos h3 {
+        color: #FFF;
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+
+    /* --------------- SESSÃO SOBRE NÓS---------------*/
+    .sessao6-sobrenos {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 0px;
+    }
+
+    .sessao6-sobrenos .content {
+        flex-direction: column;
+    }
+
+    .conteudo {
+        display: flex;
+        flex-direction: column;
+        margin-top: -30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .pt1 {
+        display: flex;
+        margin-top: 10px;
+    }
+
+    .pt2 {
+        margin-top: 20px;
+        flex-direction: column;
+        margin-bottom: 100px;
+    }
+
+    .img-sobrenos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img-sobrenos-sala-grande {
+        margin-top: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .img-sobrenos-sala-grande img {
+        width: 500px;
+    }
+
+    .img-sobrenos img {
+        width: 300px;
+    }
+
+    .texto-sobrenos {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    /* --------------- SESSÃO FINAL---------------*/
+    .sessao7-final {
+        padding: 100px 0px;
+        background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .sessao7-final .content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .sessao7-final h1 {
+        text-align: center;
+        color: white;
+        font-size: 36px;
+    }
+
+}
+
+/* 1200 PX  */
+
+@media only screen and (min-width: 1200px) {
+
+    /* CSS - Página principal */
+
+/* --------------- SESSÃO INÍCIO -----------------*/
+.ConteudoMobile{
+    display: none;
+}
+
+
+
+.sessao1-inicio {
+    width: 100%;
+    margin-top: 150px;
+    background-image: url(../assets/gradiente_inicio.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sessao1-inicio .content {
+    flex-direction: column;
+}
+
+.sessao1-inicio h1 {
+    color: #0F240A;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.sessao1-inicio h3 {
+    color: #0F240A;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+.sessao1-inicio .img_inicio {
+    display: flex;
+    justify-content: right;
+}
+
+.sessao1-inicio .texto_inicio {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.sessao1-inicio img {
+    width: 800px;
+    margin-right: -100px;
+    margin-top: -200px;
+    z-index: 1;
+}
+
+
+/* --------------- SESSÃO PROBLEMA ---------------*/
+.sessao2-problema {
+    padding: 100px 0px;
+}
+
+.sessao2-problema .content {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sessao2-problema .box-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 40px;
+}
+
+.texto-problema {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+}
+
+.img-problema {
+    display: flex;
+}
+
+.circulo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 400px;
+    border-radius: 500px;
+    background: #46B17E;
+}
+
+.sessao2-problema img {
+    align-self: center;
+    margin-left: -30px;
+    width: 450px;
+    height: 450px;
+    transform: rotate(8.898deg);
+}
+
+
+/* --------------- SESSÃO SOLUÇÃO ---------------*/
+
+.sessao3-solucao {
+    padding: 100px 0px;
+    background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.sessao3-solucao .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 70px;
+    padding: 20px 0px;
+
+}
+
+.img-solucao {
+    width: 40%;
+}
+
+.sessao3-solucao img {
+    width: 400px;
+}
+
+.sessao3-solucao .circulo {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    fill: rgba(173, 255, 226, 0.62);
+
+}
+
+.texto-solucao {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-solucao h1 {
+    color: white;
+}
+
+.texto-solucao p {
+    color: white;
+}
+
+/* --------------- SESSÃO BENEFÍCIOS ---------------*/
+.sessao4-beneficios {
+    padding: 100px 0px;
+}
+
+.sessao4-beneficios h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sessao4-beneficios .content {
+    flex-direction: column;
+}
+
+.sessao4-beneficios .box-conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.sessao4-beneficios .card {
+    width: 350px;
+    height: 200px;
+    border-radius: 4px;
+    background: #FFF;
+    box-shadow: 9px 12px 37px 0px rgba(0, 0, 0, 0.12);
+    margin-top: 20px;
+
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.sessao4-beneficios .card img {
+    width: 50px;
+}
+
+.sessao4-beneficios .card p {
+    color: #1E1E1E;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.sessao4-beneficios .card h3 {
+    color: #1E1E1E;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* --------------- SESSÃO RECURSOS---------------*/
+.sessao5-recursos {
+    padding: 100px 0px;
+    background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sessao5-recursos .content {
+    flex-direction: column;
+    gap: 50px;
+}
+
+.sessao5-recursos h1 {
+    text-align: center;
+    color: white;
+}
+
+.sessao5-recursos .box-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card-recursos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    color: white;
+}
+
+.sessao5-recursos .elipse {
+    width: 180px;
+    height: 180px;
+    background-color: #FBF8F8;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-recursos img {
+    width: 140px;
+}
+
+.card-recursos h3 {
+    color: #FFF;
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+/* --------------- SESSÃO SOBRE NÓS---------------*/
+.sessao6-sobrenos {
+    padding: 100px 0px;
+}
+
+.sessao6-sobrenos .content{
+    flex-direction: column;
+}
+
+.conteudo{
+    margin-top: -30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.pt2{
+    flex-direction: row-reverse;
+}
+
+.pt1 .img-sobrenos  img{
+    width: 300px;
+}
+
+.img-sobrenos img{
+    width: 420px;
+}
+
+.texto-sobrenos{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* --------------- SESSÃO FINAL---------------*/
+.sessao7-final{
+    padding: 100px 0px;
+    background: linear-gradient(270deg, #0F3324 0%, #108456 63.54%);
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.sessao7-final .content{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sessao7-final h1{
+    text-align: center;
+    color: white;
+    font-size: 36px;
+}
+
+    
+}
