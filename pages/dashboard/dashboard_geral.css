@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* parte de configuração dos tamanhos e cores, etc */
+.div_header{
+    width: 80%;
+    height: 75px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.container_header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container_geral{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.container_fotter{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 ;
+}
+
+.div_dashboard_geral{
+    width: 80%;
+    height: 80px;
+    background-color: blue;
+}
+
+.div_futter{
+    width: 80%;
+    height: 30px;
+    background-color: blueviolet;
+    display: flex;
+    justify-content: space-between;
+}
+/* fim da parte de configuração dos tamanhos e cores, etc */
+
+
+/* itens da header */
+.div_logo1 img{
+    height: 70px;
+}
+
+.div_links{
+    background-color: gray;
+    height: 70px;
+}
+
+.div_bnt{
+    background-color: gray;
+    height: 70px;
+}
+/* fim dos itens da header */
+
+
+/* itens da dashboard geral */
+.titulo_filtro{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_primeira_div{
+    width: 20%;
+    height: 20px;
+    background-color: yellow;
+}
+
+.dashs1{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.dashboard_geral1{
+    width: 20%;
+    height: 20px;
+    background-color: green;
+}
+
+.alerta_notes{
+    width: 20%;
+    height: 20px;
+    background-color: green;
+}
+
+.dashs2{
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.dash_bola{
+    width: 10%;
+    height: 20px;
+    background-color: brown;
+}
+
+.legendas{
+    width: 10%;
+    height: 20px;
+    background-color: brown;
+}
+
+.dash_barra_de_lado{    
+    width: 18%;
+    height: 20px;
+    background-color: brown;
+}
+/* fim dos itens da dashboard geral */
+
+
+/* itens da futter */
+.div_contato1{
+    width: 20%;
+    height: 20px;
+    background-color: yellow;
+}
+
+.div_contato2{
+    width: 20%;
+    height: 20px;
+    background-color: yellow;
+}
+
+.div_logo2{
+    width: 20%;
+    height: 20px;
+    background-color: yellow;
+}
+/* fim dos itens da futter */
