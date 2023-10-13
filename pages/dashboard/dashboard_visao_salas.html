@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,10 @@
     <link rel="stylesheet" href="../../style/dashboard/header_footer.css">
     <link rel="stylesheet" href="../../style/style.css">
 </head>
+
 <body>
+
+
 
     <header id="header" style="position: relative;">
 
@@ -39,61 +43,75 @@
 
     <div id="ConteudoSite">
 
-    <div class="containerSalas">
-        <div class="titulo-menuFiltros">
-            <div class="titulo">
-                Salas
+        <div id="modal" class="modal">
+            <div class="tituloModal">
+                Adicione sua sala
             </div>
-            <div class="menuFiltros">
-                <img id="menuHamburguer" src="../../assets/assets-dashboard/menu-fill.svg" alt="">
-            </div>
-        </div>
-
-        <div class="miniContainerSalas">
-            <div class="salas">
-                <div class="infoHW">
-                    djkajdadabr
-                    <br>
-                    adadad
-                    <br>
-                    asdada
-                    <br>
-                    adadada
-
-                </div>
-                <div class="divAlertas">
-                    <div class="tipoAlerta">
-                    <img id="iconeDeMais" src="../../assets/./assets-dashboard/check-bold.svg">
-                        
-                    </div>
-                    <div class="divVazia">
-                        <p>Sala 01</p>
-                    </div>
-                </div>
+            <div class="conteudoModal">
                 
+
+                <div class="form">
+                    <div class="conteudoForm">
+                        <div class="nomeDaSala">
+                            Nome da sala:
+                        </div>
+                        <div class="inputNomeSala">
+                            <input type="text" name="" id="inputNomeSala">
+                        </div>
+
+
+                        <div class="nomeDaSala">
+                            Quantidade de dispositivos:
+                        </div>
+                        <div class="inputNomeSala">
+                            <input type="number" name="" id="inputQuantidadeDispositivos">
+                        </div>
+                        
+
+                        <div class="divButtonAddSala">
+                            <button class="buttonAddSala" onclick="adicionarSala()">
+                                Adicionar Sala
+                            </button>
+
+                            <button class="buttonCancelarAddSala" onclick="fecharModal()">
+                                Cancelar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <div class="salas">Sala 02</div>
-            <div class="salas">Sala 03</div>    
+
         </div>
 
-        <div class="miniContainerSalas">
-            <div class="salas">Sala 04</div>
-            <div class="salas">Sala 05</div>
-            <div class="salas">Sala 06</div>
-        </div>
+        <div class="containerSalas" id="containerSalas">
+            <div class="titulo-menuFiltros">
+                <div class="titulo">
+                    Salas
+                </div>
+                <div class="menuFiltros">
+                    <img id="menuHamburguer" src="../../assets/assets-dashboard/menu-fill.svg" alt="">
+                </div>
+            </div>
 
-        <div class="miniContainerSalas">
-            <div class="salas">Sala 07</div>
-            <div class="salas">Sala 08</div>
-            <div class="salas">Sala 09</div>
-        </div>
+            <div class="miniContainerSalas" id="miniContainerSalas">
 
-        <div class="addSala">
-            <img id="iconeDeMais" src="../../assets/./assets-dashboard/plus.svg">
-            <div class="mensagem">Adicionar Sala</div>
+            </div>
+
+            <div class="addSala">
+                <div class="divDentroAddSala">
+                    <a href="javascript:void(0);" onclick="abrirModal()">
+                        <img id="iconeDeMais" src="../../assets/assets-dashboard/plus.svg">
+                        <div class="mensagem">Adicionar Sala</div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
-</div>
+
+
 </body>
+
 </html>
+<script src="../../js/visao_salas.js"></script>
