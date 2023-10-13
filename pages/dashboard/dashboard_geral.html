@@ -8,18 +8,36 @@
     <link rel="stylesheet" href="/style/dashboard/dashboard_geral.css">
     <link rel="stylesheet" href="/style/style.css">
     <script src="/js/dashboard_geral.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+
 </head>
 <body>
-    <div class="container_header">
-        <div class="div_header">
-            <div class="div_logo1"><img src="/assets/logo/logo_horizontal.png" alt=""></div>
-    
-            <div class="div_links">
-                <a href="">VISÃO GERAL</a>
-                <a href="">VISÃO SALAS</a>
-            </div>
-        </div>
-    </div>
+    <header id="header" style="position: relative;">
+
+        <div class="container">
+
+            <div class="content">
+
+                <div class="logo">
+                    <img src="/assets/logo/logo_horizontal.png" alt="">
+                </div> <!--logo-->
+
+                <nav>
+                    <ul>
+                        <a href="../index.html">
+                            <li>Visão Geral</li>
+                        </a>
+                        <a href="../index.html">
+                            <li>Visão Salas</li>
+                        </a>
+                    </ul>
+                </nav>
+
+            </div> <!-- content -->
+
+        </div> <!-- container -->
+
+    </header>
     
 
     <div class="container_geral">
@@ -29,28 +47,56 @@
                     <p>Visão Geral</p>
                 </div>
                 <div class="item_primeira_div">
-                    <img class="menuHamburguer" src="../../assets/menu-fill.svg" alt="">
+                    <img class="menuHamburguer" src="/assets/assets-dashboard/menu-fill.svg" alt="">
                 </div>
             </div>
     
             <div class="dashs1">
-                <div class="dashboard_geral1"></div>
+                <div class="dashboard_geral1">
+
+                    <!-- <canvas id="myChart"></canvas> -->
+                
+                </div>
                 <div class="alerta_notes"></div>
             </div>
             <div class="dashs2">
-                <div class="dash_bola">Status Máquinas</div>
+                <div class="dash_bola">
+                    <!-- Status Máquinas <img src="/assets/alert-circle.svg" alt="">-->
+                    
+                </div>
                 <div class="legendas"></div>
-                <div class="dash_barra_de_lado">Porcentagem de Ativos</div>
+                <div class="dash_barra_de_lado">Porcentagem de Ativos <img src="/assets/alert-circle.svg" alt=""></div>
             </div>
         </div>
     </div>
     
-    <div class="container_fotter">
-        <div class="div_futter">
-            <div class="div_contato1"></div>
-            <div class="div_contato2"></div>
-            <div class="div_logo2"></div>
-        </div>
-    </div>
+    <footer>
+
+        <div class="container">
+            .
+            <div class="content">
+
+                <h5 class="endereco">
+                    Rua Haddock Lobo, <br>
+                    São Paulo - SP <br>
+                    CEP 04011 - 001
+                </h5>
+
+                <div class="icons-contato">
+                    <i class="bi bi-facebook icon"></i>
+                    <i class="bi bi-instagram icon"></i>
+                    <i class="bi bi-twitter icon"></i>
+                    <i class="bi bi-telephone-fill icon"></i>
+                    <i class="bi bi-envelope-fill icon"></i>
+                </div>
+
+                <div class="logo">
+                    <img src="/assets/logo/logo_horizontal.png" alt="">
+                </div>
+            </div><!-- content -->
+
+        </div><!-- container -->
+
+    </footer>
 </body>
 </html>
