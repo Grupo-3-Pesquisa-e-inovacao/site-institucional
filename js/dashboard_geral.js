@@ -1,20 +1,24 @@
-// const ctx = document.getElementById('myChart');
+// let ctx = document.querySelector('#myChart').getContext('2d')
 
-// new Chart(ctx, {
-//     type: 'bar',
-//     data: {
-//       labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-//       datasets: [{
-//         label: '# of Votes',
-//         data: [12, 19, 3, 5, 2, 3],
-//         borderWidth: 1
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         y: {
-//           beginAtZero: true
+// const labels = ['time1', 'time2', 'time3', 'time4'];
+
+// const points = [100, 121, 300, 290];
+// const color = '#03fa6e';
+
+// const data ={
+//     labels: labels,
+//     datasets : [
+//         {
+//             label:'pontuacao',
+//             data: points,
+//             borderColor: color,
+//             backgroundColor: color
 //         }
-//       }
-//     }
-//   });
+//     ]
+// }
+// const config = {
+//     type: 'line',
+//     data: data
+// }
+
+// let myChart = new CharacterData(ctx, config);
