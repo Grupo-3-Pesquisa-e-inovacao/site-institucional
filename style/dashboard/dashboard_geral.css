@@ -5,19 +5,7 @@
 }
 
 /* parte de configuração dos tamanhos e cores, etc */
-.container_header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 
-.div_header{
-    width: 80%;
-    height: 75px;
-    display: flex;
-    justify-content: space-between;
-    margin: 15px 0;
-}
 
 .container_geral{
     width: 100%;
@@ -51,64 +39,42 @@
 /* fim da parte de configuração dos tamanhos e cores, etc */
 
 
-/* itens da header */
-.div_logo1 img{
-    height: 70px;
-}
 
-.div_links{
-    height: 75px;
-    display: flex;
-    gap: 30px;
-}
-
-.div_links a{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-decoration: none;
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-/* a:hover{
-    border-bottom: 3px solid black;
-    transition-duration: 1s;
-} */
-/* fim dos itens da header */
 
 
 /* itens da dashboard geral */
 .titulo_filtro{
     display: flex;
-    justify-content: center;
-    gap: 2%;
-    padding: 3% 0 1% 0;
+    /* justify-content: space-between; */
+    width: 100%;
+    gap: 80%;
+    padding: 3% 4% 1% 4%;
 }
 
-.item_primeira_div{
-    width: 20%;
+.item_primeira_div_txt{
+    width: 50%;
     height: 53px;
     display: flex;
-    justify-content: center;
     background-color: yellow;
 }
 
-/* .menuHamburguer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 90%;
-    height: 10%;
-    border-radius: 10px;
-} */
-
-.item_primeira_div p{
-    font-size: 14%;
+.item_primeira_div_txt p{
     font-weight: 600;
-    font-size: 30%;
+    font-size: 30px;
+}
 
+.item_primeira_div{
+    width: 10%;
+    height: 53px;
+    display: flex;
+    /* justify-content: space-between; */
+    background-color: yellow;
+}
+
+.item_primeira_div img{
+    size: 5%;
+    display: flex;
+    justify-content: center;
 }
 
 .dashs1{
@@ -125,8 +91,9 @@
 
 .alerta_notes{
     width: 45%;
-    height: 20px;
+    height: 200x;
     background-color: green;
+    padding: 0 0 2%           ;
 }
 
 .dashs2{
