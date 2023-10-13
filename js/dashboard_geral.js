@@ -1,24 +1,32 @@
-let ctx = document.querySelector('#myChart').getContext('2d')
+let ctx = document.querySelector('#myChart')
 
 const labels = ['time1', 'time2', 'time3', 'time4'];
 
 const points = [100, 121, 300, 290];
 const color = '#03fa6e';
 
-const data ={
+let grafico = new Chart(ctx, {
+type: "bar",
+data: {
     labels: labels,
-    datasets : [
+    datasets: [
         {
-            label:'pontuacao',
+            label: "Acompanhamento dos votos:",
             data: points,
-            borderColor: color,
-            backgroundColor: color
-        }
-    ]
-}
-const config = {
-    type: 'line',
-    data: data
-}
-
-let myChart = new CharacterData(ctx, config);
+            backgroundColor: [`${color}`,
+            `${color}`,
+            `${color}`,
+            `${color}`],
+            borderWidth: 1,
+        },
+    ],
+},
+options: {
+    scales: {
+        responsive: true,
+        y: {
+            beginAtZero: true,
+        },
+    },
+},
+});
