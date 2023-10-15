@@ -150,7 +150,7 @@
                 </div>
 
                 <div class="wrapper">
-                    <button class="cadastro__button" style="width: 100%;"  onclick="cadastro_gente()">
+                    <button class="cadastro__button" style="width: 100%;" onclick="cadastro_gente()">
                         Cadastrar
                     </button>
 
@@ -167,6 +167,22 @@
             </section>
         </div>
     </main>
+
+
+    <div class="nomeSala">${nomeSala}</div>
+    <div class="Alerta">
+            <div class="dados">
+                <div class="tituloDados" id="cpu"><span style="font-weight: bold;">CPU:</span> %</div>
+                <div class="tituloDados" id="disco"><span style="font-weight: bold;">Disco:</span> %</div>
+                <div class="tituloDados" id="ram"><span style="font-weight: bold;">RAM:</span> %</div>
+                <div class="tituloDados" id="rede"><span style="font-weight: bold;">Rede:</span> %</div>
+                <div class="tituloDados"><span style="color: gray; font-size: 10px;" >${numeroAletorio} de ${quantidadeDispositivos} máquinas ligadas</span></div>
+            </div>
+        <div class="iconAlerta">
+            <img src="../../assets/assets-dashboard/check-bold.svg" alt="">
+        </div>
+    </div>
+
 
     <!-- COMEÇO - FOOTER -->
     <footer>
