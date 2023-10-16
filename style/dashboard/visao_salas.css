@@ -12,8 +12,8 @@
     justify-content: center;
     width: 100%;
     height: 90vh;
-    border-bottom: 1px solid #0F3324;
-    border-top: 1px solid  #0F3324;
+    /* border-bottom: 1px solid #0F3324;
+    border-top: 1px solid  #0F3324; */
 }
 
 .containerSalas {

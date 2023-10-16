@@ -40,7 +40,7 @@ function criarNovaSala(nomeSala, quantidadeDispositivos) {
 
     // Defina o conteúdo da sala
     novaSalaDiv.innerHTML = `
-        <div class="nomeSala">${nomeSala}</div>
+        <a href="./dashboard_computadores_sala.html"><div class="nomeSala">${nomeSala}</div>
         <div class="Alerta">
             <div class="dados">
                 <div class="tituloDados" id="alertaPc">DESKTOP-DOUGLAS <img src="" alt=""></div>
@@ -49,6 +49,7 @@ function criarNovaSala(nomeSala, quantidadeDispositivos) {
                 <div class="tituloDados"><span style="color: gray; font-size: 10px;">${numeroAleatorio} de ${maiorQtdDeMaquinas} máquinas ligadas</span></div>
             </div>
         </div>
+        </a>
     `;
 
     // Função para atualizar os ícones de alerta a cada 5 segundos
