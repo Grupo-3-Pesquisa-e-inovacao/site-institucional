@@ -28,60 +28,59 @@ function adicionarSala() {
     }
 }
 
-
 function criarNovaSala(nomeSala, quantidadeDispositivos) {
     // Crie um novo elemento de sala
     const novaSalaDiv = document.createElement("div");
     novaSalaDiv.className = "salas";
 
-    document.getElementsByClassName("iconAlerta")
-    
-    var menorQtdDeMaquinas = 1;
+    var menorQtdDeMaquinas = 3;
     var maiorQtdDeMaquinas = quantidadeDispositivos;
     var Intervalo = maiorQtdDeMaquinas - menorQtdDeMaquinas;
-    var numeroAleatorio = parseInt(Math.random() * Intervalo);
-    
-    var iconeSorteado = Math.random();
-    var iconeAlerta1
-
-    if (iconeSorteado < 0.25) {
-        iconeAlerta = '<img src="../../assets/assets-dashboard/alert-verde.svg" alt="">';
-    } else if (iconeSorteado < 0.5) {
-        iconeAlerta = '<img src="../../assets/assets-dashboard/alert-amarelo.svg" alt="">';
-    } else if (iconeSorteado < 0.75) {
-        iconeAlerta = '<img src="../../assets/assets-dashboard/alert-vermelho.svg" alt="">';
-    } else {
-        iconeAlerta = '';
-    }
-
+    var numeroAleatorio = parseInt(Math.random() * Intervalo + 3);
 
     // Defina o conteúdo da sala
     novaSalaDiv.innerHTML = `
-    <div class="nomeSala">${nomeSala}</div>
-    <div class="Alerta">
+        <div class="nomeSala">${nomeSala}</div>
+        <div class="Alerta">
             <div class="dados">
-                <div class="tituloDados" id="alertaPc">DESKTOP-DOUGLAS ${iconeAlerta}</div>
-                <div class="tituloDados" id="alertaPc">DESKTOP-FELIPE ${iconeAlerta}</div>
-                <div class="tituloDados" id="alertaPc">DESKTOP-MELISSA ${iconeAlerta}</div>
-                <div class="tituloDados"><span style="color: gray; font-size: 10px;">${numeroAleatorio} de ${quantidadeDispositivos} máquinas ligadas</span></div>
+                <div class="tituloDados" id="alertaPc">DESKTOP-DOUGLAS <img src="" alt=""></div>
+                <div class="tituloDados" id="alertaPc">DESKTOP-FELIPE <img src="" alt=""></div>
+                <div class="tituloDados" id="alertaPc">DESKTOP-MELISSA <img src="" alt=""></div>
+                <div class="tituloDados"><span style="color: gray; font-size: 10px;">${numeroAleatorio} de ${maiorQtdDeMaquinas} máquinas ligadas</span></div>
             </div>
-        <div class="iconAlerta">
-            ${iconeAlerta}
         </div>
-    </div>
     `;
 
+    // Função para atualizar os ícones de alerta a cada 5 segundos
+    function atualizarIconesAlerta() {
+        const icones = novaSalaDiv.querySelectorAll(".tituloDados img");
+        for (let i = 0; i < icones.length; i++) {
+            var iconeSorteado = Math.random();
+            var novoIcone;
     
+            if (iconeSorteado < 0.33) {
+                novoIcone = "../../assets/assets-dashboard/alert-amarelo.svg";
+            } else if (iconeSorteado < 0.66) {
+                novoIcone = "../../assets/assets-dashboard/dangerous.svg";
+            } else {
+                novoIcone = "../../assets/assets-dashboard/alert-verde.svg";
+            }
+    
+            icones[i].src = novoIcone;
+        }
+    }
+
+    // Chame a função para atualizar os ícones de alerta inicialmente
+    atualizarIconesAlerta();
+
+    // Use setInterval para atualizar os ícones a cada 5 segundos
+    setInterval(atualizarIconesAlerta, 5000);
+
     return novaSalaDiv;
 }
 
-function gerarAlertasPC() {
-    
-    
-}
 
-
-
+// CÓDIGO PARA GERAR DADOS ALEATÓRIOS DE CPUM, RAM, REDE E DICO
 
 // function atualizarNumeroAleatorio(sala, numeroAleatorioRAM, numeroAleatorioRede, numeroAleatorioDisco, numeroAleatorioCPU) {
 // const cpuElement = sala.querySelector("#cpu");
