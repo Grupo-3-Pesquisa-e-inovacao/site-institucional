@@ -51,18 +51,64 @@
             <div class="dashs1">
                 <div class="dashboard_geral1">
 
-                    <canvas id="myChart"></canvas> 
-                
+                    <canvas id="myLineChart"></canvas> 
                 </div>
-                <div class="alerta_notes"></div>
+                <div class="alerta_notes">
+                    <div class="titulo_alerta">Alertas</div>
+                    <div class="localizacao_alerta">
+                        <div id="nomeInfoAlerta">Alerta</div>
+                        <div id="nomeInfoID">| ID |</div>
+                        <div id="nomeInfoStatus">       Status</div>
+                    </div>
+                    <div class="alerta1">
+                        <img src="/assets/assets-dashboard/dangerous.svg" alt=""><p>| 01324 | Valor da CPU excedido</p>
+                    </div>
+                    <div class="alerta2">
+                        <img src="/assets/assets-dashboard/dangerous.svg" alt=""> <p>| 01349 | Valor da CPU excedindo </p>
+                    </div>
+                    <div class="alerta3">
+                        <img src="/assets/assets-dashboard/dangerous.svg" alt=""> <p>| 01313 | Valor da CPU excedindo</p>
+                    </div>
+
+                    <div class="ver_outros">
+                        <img src="/assets/left-arrow.svg" alt=""> <img src="/assets/right-arrow.svg" alt="">
+                    </div>
+                </div>
             </div>
             <div class="dashs2">
                 <div class="dash_bola">
-                    Status Máquinas <img src="/assets/alert-circle.svg" alt="">
+                    <p>Status Máquinas <img src="/assets/alert-circle.svg" alt=""></p>
+                    <span class="tooltip">Aqui você consegue ver todos os estados de suas máquinas</span>
                     
+                    <canvas id="myDoughnutChart"></canvas>
                 </div>
-                <div class="legendas"></div>
-                <div class="dash_barra_de_lado">Porcentagem de Ativos <img src="/assets/alert-circle.svg" alt=""></div>
+
+                <div class="legendas">
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #109A68;"></div>
+                        Operação Normal
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #DAC617;"></div>
+                        Operação em Alerta
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color" style="background-color: #FF0000;"></div>
+                        Operação em Risco
+                    </div>
+                </div>
+
+                <div class="dash_barra_de_lado">
+                    <p>Porcentagem de Ativos <img src="/assets/alert-circle.svg" alt=""></p>
+                    <span class="tooltip">Aqui você vê todas suas maquinas e quantas estão ligadas ou desligadas</span>
+                    
+
+                    <h3> Total de 43 máquinas</h3>
+
+                    <canvas id="myHorizontalBarChart" width="200" height="45"></canvas>
+                </div>
+
+                
             </div>
         </div>
     </div>
