@@ -55,11 +55,20 @@
     width: 50%;
     height: 53px;
     display: flex;
+    flex-direction: column;
 }
 
 .item_primeira_div_txt p{
-    font-weight: 600;
+    font-weight: bold;
     font-size: 30px;
+}
+
+.item_primeira_div_txt span{
+    color: #919293;
+    display: flex;
+    font-size: medium;
+    font-weight: bold;
+    margin-left: 5%;
 }
 
 .item_primeira_div{
