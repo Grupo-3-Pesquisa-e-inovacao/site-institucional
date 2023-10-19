@@ -71,7 +71,7 @@ header .links a {
   text-align: center;
   text-transform: lowercase;
   animation: all .2s ease-in-out;
-  font-family: Arial, Helvetica, sans-serif;
+  
   font-weight: 400;
 }
 
@@ -126,7 +126,6 @@ header .options .icon img {
 header .options .ajuda {
 
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   font-weight: 500;
   cursor: help;
@@ -178,7 +177,6 @@ header .hb-menu .line {
   box-shadow: 2px 2px rgba(0, 0, 0, 0.2);
   border-top: 1px solid white;
   border-left: 1px solid white;
-  font-family: Arial, Helvetica, sans-serif;
   z-index: 12;
 }
 
@@ -295,7 +293,6 @@ header .hb-menu .line {
 
 .menu-mobile a {
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
   color: black;
   text-align: center;
   font-size: 22px;
@@ -316,7 +313,6 @@ footer p {
   font-size: 14px;
   text-transform: lowercase;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
