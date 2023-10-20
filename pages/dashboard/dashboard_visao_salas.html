@@ -94,14 +94,12 @@
                             <input type="text" name="" id="inputNomeSala">
                         </div>
 
-
                         <div class="nomeDaSala">
-                            Quantidade de dispositivos:
+                            Localização:
                         </div>
                         <div class="inputNomeSala">
-                            <input type="number" name="" id="inputQuantidadeDispositivos">
+                            <input type="text" name="" id="localizacao">
                         </div>
-
 
                         <div class="divButtonAddSala">
                             <button class="buttonAddSala" onclick="adicionarSala()">
@@ -132,43 +130,64 @@
             <div class="miniContainerSalas" id="miniContainerSalas">
                 <div class="salas">
                     <a href="./dashboard_computadores_sala.html">
-                        <div class="nomeSala">Laboratório de informática</div>
-                        <div class="infopc-infostatus">
-                            <div class="infopc">
-                                <div class="iconePC">
-                                    <img src="../../assets/assets-dashboard/computer.svg" alt="">
-                                </div>
-                                <div class="info">
-                                    <div class="tituloDados"><span style="font-weight: bold;">Marca:</span><span>LENOVO</span> </div>
-                                <div class="tituloDados"><span style="font-weight: bold;">Modelo:</span><span> p112f</span></div>
-                                <div class="tituloDados"><span style="font-weight: bold;">SO:</span><span> Windows - 10</span></div>
-                                </div>
-                                
+                        <div class="nomeSala">Lab. Informática</div>
+                        <div class="infoSala">
+                            <div class="tituloDados"><span style="font-weight: bold;">ID da sala:</span> 0874</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Localização:</span> Subsolo 01</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Total de dispositivos: 50</span>
                             </div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: green">Ligados: </span>
+                            38</div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: red">Desligados: </span>
+                            12</div>
+                        </div>
+                    </a>
+                </div>
 
-                            <div class="infostatus">
-                                    <div class="dados">
-                                        <div class="tituloStatus">STATUS</div>
-                                        
-
-                                        <div class="valores-iconeAlertaStatus">
-                                        <div class="valoresRegistros">
-                                            <div class="tituloDados" id="cpu"><span style="font-weight: bold;"> CPU:</span>
-                                            </div>
-                                            <div class="tituloDados" id="disco"><span
-                                                    style="font-weight: bold;">Disco:</span></div>
-                                            <div class="tituloDados" id="ram"><span style="font-weight: bold;">Ram:</span>
-                                            </div>
-                                            <div class="tituloDados" id="rede"><span style="font-weight: bold;">Rede:</span>
-                                            </div>
-
-                                            <div class="iconeAlerta">
-                                                <img src="../../assets/assets-dashboard/alert-verde.svg" alt="">
-                                            </div>
-                                        </div>
-                                       
-                                </div>
+                <div class="salas">
+                    <a href="./dashboard_computadores_sala.html">
+                        <div class="nomeSala">Sala de aula</div>
+                        <div class="infoSala">
+                            <div class="tituloDados"><span style="font-weight: bold;">ID da sala: </span>0458</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Localização:</span> 6° Andar</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Total de dispositivos: 15</span>
                             </div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: green">Ligados: </span>
+                            5</div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: red">Desligados: </span>
+                            10</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="salas">
+                    <a href="./dashboard_computadores_sala.html">
+                        <div class="nomeSala">Sala de aula</div>
+                        <div class="infoSala">
+                            <div class="tituloDados"><span style="font-weight: bold;">ID da sala:</span> 0784</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Localização:</span> Subsolo 02</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Total de dispositivos: 27</span>
+                            </div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: green">Ligados: </span>
+                            18</div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: red">Desligados: </span>
+                            9</div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="salas">
+                    <a href="./dashboard_computadores_sala.html">
+                        <div class="nomeSala">Lab. Informática</div>
+                        <div class="infoSala">
+                            <div class="tituloDados"><span style="font-weight: bold;">ID da sala:</span> 0438</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Localização:</span> 3° Andar</div>
+                            <div class="tituloDados"><span style="font-weight: bold;">Total de dispositivos: 5</span>
+                            </div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: green">Ligados: </span>
+                            5</div>
+                            <div class="tituloDados"><span style="font-weight: bold; color: red">Desligados: </span>
+                            0</div>
                         </div>
                     </a>
                 </div>
@@ -183,6 +202,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
 
     <footer>

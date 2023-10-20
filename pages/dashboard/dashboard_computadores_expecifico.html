@@ -6,74 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computadores | Expecífico</title>
     <link rel="stylesheet" href="../../style/dashboard/header_footer.css">
+    <link rel="stylesheet" href="../../style/style.css">
     <link rel="stylesheet" href="../../style/dashboard/computadores_expecifico.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
-    <!-- Inicio dos itens da header -->
-    <div class="help-screen" id="help-screen">
-        <div class="help-window">
-            <div class="window-top">
-                <div class="close" onclick="showHelp()">
-                    X
-                </div>
-            </div>
+    <header id="header" style="position: relative;">
 
-            <ul class="help-info">
-                <li>Lista de alertas</li>
-                <li><img src="../../assets/assets-dashboard/alert-amarelo.svg" alt="">
-                    <p> - Alerta critico</p>
-                </li>
-                <li><img src="../../assets/assets-dashboard/alert-amarelo.svg" alt="">
-                    <p> - Alerta atenção</p>
-                </li>
-                <li><img src="../../assets/assets-dashboard/alert-verde.svg" alt="">
-                    <p> - Alerta OK</p>
-                </li>
-            </ul>
-        </div>
-    </div>
+        <div class="container">
 
-    <div class="menu-mobile" id="menu-mobile">
-        <ul class="icons">
-            <li onclick="showHelp()">?</li>
-            <li><img src="../../assets/assets-dashboard/cog.png" alt=""></li>
-            <li><img src="../../assets/assets-dashboard/user.png" alt=""></li>
-        </ul>
-        <a href="">Inicio</a>
-        <a href="">Dash geral</a>
-        <a href="">Salas</a>
-    </div>
+            <div class="content">
 
-    <header>
-        <div class="logo">
-            <img src="../../assets/logo/logo_horizontal.png" alt="">
-            <a href="./dashboard_geral.html"></a>
-        </div>
-        <div class="links">
-            <a href="./dashboard_geral.html">Visão Geral</a>
-            <a href="./dashboard_visao_salas.html">Visão Salas</a>
-        </div>
+                <div class="logo">
+                    <img src="/assets/logo/logo_horizontal.png" alt="">
+                </div> <!--logo-->
 
-        <div class="options">
-            <div class="icon ajuda" onclick="showHelp()">
-                ?
-            </div>
-            <div class="icon">
-                <img src="../../assets/assets-dashboard/cog.png" alt="">
-            </div>
-            <div class="icon">
-                <img src="../../assets/assets-dashboard/user.png" alt="">
-            </div>
-        </div>
+                <nav>
+                    <ul>
+                        <a href="./dashboard_geral.html">
+                            <li>Visão Geral</li>
+                        </a>
+                        <a href="dashboard_visao_salas.html">
+                            <li>Visão Salas</li>
+                        </a>
+                    </ul>
+                </nav>
 
-        <div class="hb-menu" onclick="showMenu()">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+            </div> <!-- content -->
+
+        </div> <!-- container -->
+
     </header>
-    <!-- Fim dos itens da header -->
 
     <div class="conteudoSite">
         <div class="containerBlocoGrafico">
@@ -105,31 +69,7 @@
                                         Uso indevido</span></span>
                             </div>
                             <div class="icones-e-alertas">
-                                <div class="bloco-com-3-alertas">
-                                    <span id="icones-e-alertas">
-                                        <img src="../../assets/assets-dashboard/cpu.svg" alt="">
-                                        <img src="../../assets/assets-dashboard/dangerous.svg" alt="">
-                                    </span>
-                                    <span id="icones-e-alertas">
-                                        <img src="../../assets/assets-dashboard/ram.svg" alt="">
-                                        <img src="../../assets/assets-dashboard/dangerous.svg" alt="">
-                                    </span>
-                                    <span id="icones-e-alertas">
-                                        <img src="../../assets/assets-dashboard/disco.svg" alt="">
-                                        <img src="../../assets/assets-dashboard/dangerous.svg" alt="">
-                                    </span>
-                                </div>
-                                <div class="bloco-com-2-alertas">
-
-                                    <span id="icones-e-alertas">
-                                        <img src="../../assets/assets-dashboard/rede.svg" alt="">
-                                        <img src="../../assets/assets-dashboard/dangerous.svg" alt="">
-                                    </span>
-                                    <span id="icones-e-alertas">
-                                        <img src="../../assets/assets-dashboard/janelas.svg" alt="">
-                                        <img src="../../assets/assets-dashboard/dangerous.svg" alt="">
-                                    </span>
-                                </div>
+                               
 
 
                             </div>
@@ -149,7 +89,8 @@
 
                         <span id="titulo-componente">Wi-Fi</span>
                         <div class="bloco-wifi">
-
+                            <canvas id="meuGraficoWifi">
+                            </canvas>
                         </div>
                     </div>
 
@@ -159,7 +100,22 @@
 
                         <span id="titulo-componente">Disco</span>
                         <div class="bloco-disco">
-
+                            <canvas id="meuGraficoDisco">
+                                <!-- Grafico -->
+                            </canvas>
+                            <div class="InfoGrafico">
+                                <div class="separacaoInformacoes">
+                                    <div class="corLegendaVerde"></div>
+                                    <div class="legenda">Espaço disponível.</div>
+                                </div>
+                               
+                                <div class="separacaoInformacoes">
+                                    <div class="corLegendaVermelha"></div>
+                                    <div class="legenda">Espaço em uso.</div>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -170,7 +126,8 @@
 
                             <span id="titulo-componente">RAM</span>
                             <div class="bloco-ram">
-
+                                <canvas id="meuGraficoRam">
+                                </canvas>
                             </div>
                         </div>
 
@@ -180,7 +137,8 @@
 
                             <span id="titulo-componente">CPU</span>
                             <div class="bloco-cpu">
-
+                                <canvas id="meuGraficoCPU">
+                                </canvas>
                             </div>
                         </div>
                     </div>
@@ -197,25 +155,166 @@
                 </div>
             </div>
         </div>
-        
     </div>
-
-    <footer>
-        <p>Safe Monitor - 2023 - Todos direitos reservados</p>
-    </footer>
 </body>
 
 </html>
-
 <script>
-    let helpScreen = document.getElementById("help-screen")
-    let menuMobile = document.getElementById("menu-mobile")
 
-    function showHelp() {
-        helpScreen.classList.toggle("visible")
-    }
+    // GRAFICO WIFI
+var graficoWifi = document.getElementById('meuGraficoWifi').getContext('2d');
 
-    function showMenu() {
-        menuMobile.classList.toggle("visible")
+var gradient = graficoWifi.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(169, 223, 216, 1)');
+gradient.addColorStop(1, 'rgba(255, 255, 255, 0.4)'); 
+
+var lineData = {
+    labels: ["","","","","","","","","","","","","","","","","","","","","","","","","","","","","","","",""], // Define uma matriz vazia para os rótulos
+    fontSize: '10px',
+    datasets: [
+        {
+            label: "Consumo de Rede",
+            data: [100,130,90,120,100,450,240,220,245,210,215,320,300,500,480,450,470,500,485,475,290,445,480,460,475,215,300,270,130,280,300,270,350],
+            fill: true,
+            borderColor: 'rgb(75, 192, 192)',
+            tension: 0.1,
+            backgroundColor: gradient,
+            pointRadius: 0,
+        }
+    ]
+};
+
+var lineChart = new Chart(graficoWifi, {
+    type: 'line',
+    data: lineData,
+    options: {
+        scales: {
+            y: {
+                grid: {
+                    display: false,
+                    
+                }
+            },
+            x: {
+                grid: {
+                    display: false 
+                }
+            }
+        }
     }
+})
+
+
+// GRÁFICO DISCO
+
+var graficoDisco = document.getElementById('meuGraficoDisco').getContext('2d');
+var doughnutCtx = document.getElementById('meuGraficoDisco').getContext('2d');
+
+var gradient = graficoDisco.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(169, 223, 216, 1)');
+gradient.addColorStop(1, 'rgba(0, 0, 0, 0.5)'); 
+
+var doughnutData = {
+    datasets: [
+        {
+            data: [20, 80],
+            backgroundColor: ['#109A68', '#FF0000'],
+            borderRadius: 5,
+        }
+    ]
+};
+
+
+var doughnutChart = new Chart(doughnutCtx, {
+    type: 'doughnut',
+    data: doughnutData,
+});
+
+
+// GRÁFICO RAM
+
+var graficoRam = document.getElementById('meuGraficoRam').getContext('2d');
+
+
+var lineData = {
+    labels: ["","","","","","","","","","","","","","","","","","","","","",""],
+    fontSize: '10px',
+    datasets: [
+        {
+            label: "Consumo de Rede",
+            data: [20,30,50,70,50,64,40,49,58,63,70,79,80,70,73,80,83,80,81,90,86,94,97,100,100],
+
+            fill: true,
+            borderColor: 'rgb(220, 200, 230)',
+            tension: 0.1,
+            backgroundColor: "#FFDCFB",
+            pointRadius: 5,
+        }
+    ]
+};
+
+var lineChart = new Chart(graficoRam, {
+    type: 'line',
+    data: lineData,
+    options: {
+        scales: {
+            y: {
+                grid: {
+                    display: false,
+                    
+                }
+            },
+            x: {
+                grid: {
+                    display: false 
+                }
+            }
+        }
+    }
+})
+
+// GRÁFICO CPU
+
+var meuGraficoCPU = document.getElementById('meuGraficoCPU').getContext('2d');
+
+
+var gradient = meuGraficoCPU.createLinearGradient(0, 0, 0, 400);
+gradient.addColorStop(0, 'rgba(147,112,219, 0.3)');
+gradient.addColorStop(1, 'rgba(255, 255, 255, 0)'); 
+
+var lineData = {
+    labels: ["","","","","","","","","","","","","","","","","","","","","","","","","","","","",""], // Define uma matriz vazia para os rótulos
+    fontSize: '10px',
+    datasets: [
+        {
+            label: "Consumo de Rede",
+            data: [100,130,90,120,100,450,240,220,245,210,215,320,300,500,480,450,470,500,485,475,290,445,480,460,475,215,300,270],
+            fill: true,
+            borderColor: 'rgb(147,112,219, 1)',
+            tension: 0.1,
+            backgroundColor: gradient,
+            pointRadius: 0,
+        }
+    ]
+};
+
+var lineChart = new Chart(meuGraficoCPU, {
+    type: 'line',
+    data: lineData,
+    options: {
+        scales: {
+            y: {
+                grid: {
+                    display: false,
+                    
+                }
+            },
+            x: {
+                grid: {
+                    display: false 
+                }
+            }
+        }
+    }
+});
 </script>
