@@ -40,16 +40,22 @@ function criarNovaSala(nomeSala, quantidadeDispositivos) {
 
     // Defina o conteúdo da sala
     novaSalaDiv.innerHTML = `
-        <a href="./dashboard_computadores_sala.html"><div class="nomeSala">${nomeSala}</div>
-        <div class="Alerta">
-            <div class="dados">
-                <div class="tituloDados" id="alertaPc">DESKTOP-DOUGLAS <img src="" alt=""></div>
-                <div class="tituloDados" id="alertaPc">DESKTOP-FELIPE <img src="" alt=""></div>
-                <div class="tituloDados" id="alertaPc">DESKTOP-MELISSA <img src="" alt=""></div>
-                <div class="tituloDados"><span style="color: gray; font-size: 10px;">${numeroAleatorio} de ${maiorQtdDeMaquinas} máquinas ligadas</span></div>
-            </div>
+    <a href="./dashboard_computadores_sala.html">
+    <div class="nomeSala">${nomeSala}</div>
+    <div class="Alerta">
+        <div class="dados">
+            <div class="tituloDados" id="cpu"><span style="font-weight: bold;"> CPU:</span></div>
+            <div class="tituloDados" id="disco"><span style="font-weight: bold;">Disco:</span></div>
+            <div class="tituloDados" id="ram"><span style="font-weight: bold;">Ram:</span></div>
+            <div class="tituloDados" id="rede"><span style="font-weight: bold;">Rede:</span></div>
+            <div class="tituloDados"><span style="font-weight: bold;">Marca:</span><span>
+                    LENOVO</span> </div>
+            <div class="tituloDados"><span style="font-weight: bold;">Modelo:</span><span> p112f
+                </span></div>
+
         </div>
-        </a>
+    </div>
+</a>
     `;
 
     // Função para atualizar os ícones de alerta a cada 5 segundos
@@ -81,62 +87,62 @@ function criarNovaSala(nomeSala, quantidadeDispositivos) {
 }
 
 
-// CÓDIGO PARA GERAR DADOS ALEATÓRIOS DE CPUM, RAM, REDE E DICO
+// CÓDIGO PARA GERAR DADOS ALEATÓRIOS DE CPU, RAM, REDE E DICO
 
-// function atualizarNumeroAleatorio(sala, numeroAleatorioRAM, numeroAleatorioRede, numeroAleatorioDisco, numeroAleatorioCPU) {
-// const cpuElement = sala.querySelector("#cpu");
-// const discoElement = sala.querySelector("#disco");
-// const ramElement = sala.querySelector("#ram");
-// const redeElement = sala.querySelector("#rede");
+function atualizarNumeroAleatorio(sala, numeroAleatorioRAM, numeroAleatorioRede, numeroAleatorioDisco, numeroAleatorioCPU) {
+const cpuElement = sala.querySelector("#cpu");
+const discoElement = sala.querySelector("#disco");
+const ramElement = sala.querySelector("#ram");
+const redeElement = sala.querySelector("#rede");
 
-// // Lógica para definir a cor do texto para a CPU
-// if (numeroAleatorioCPU > 70) {
-//     cpuElement.innerHTML = "CPU: <span style='color: red'>" + numeroAleatorioCPU + "%</span>";
-// } else if (numeroAleatorioCPU < 50) {
-//     cpuElement.innerHTML = "CPU: <span style='color: green'>" + numeroAleatorioCPU + "%</span>";
-// } else {
-//     cpuElement.innerHTML = "CPU: <span style='color: yellow'>" + numeroAleatorioCPU + "%</span>";
-// }
+// Lógica para definir a cor do texto para a CPU
+if (numeroAleatorioCPU > 70) {
+    cpuElement.innerHTML = "<span style='font-weight: bold'>CPU: </span> <span style='color: red'>" + numeroAleatorioCPU + "%</span>";
+} else if (numeroAleatorioCPU < 50) {
+    cpuElement.innerHTML = "<span style='font-weight: bold'>CPU: </span> <span style='color: green'>" + numeroAleatorioCPU + "%</span>";
+} else {
+    cpuElement.innerHTML = "<span style='font-weight: bold'>CPU: </span> <span style='color: yellow'>" + numeroAleatorioCPU + "%</span>";
+}
 
-// // Lógica para definir a cor do texto para o Disco
-// if (numeroAleatorioDisco > 75) {
-//     discoElement.innerHTML = "Disco: <span style='color: red'>" + numeroAleatorioDisco + "%</span>";
-// } else if (numeroAleatorioDisco < 40) {
-//     discoElement.innerHTML = "Disco: <span style='color: green'>" + numeroAleatorioDisco + "%</span>";
-// } else {
-//     discoElement.innerHTML = "Disco: <span style='color: yellow'>" + numeroAleatorioDisco + "%</span>";
-// }
+// Lógica para definir a cor do texto para o Disco
+if (numeroAleatorioDisco > 75) {
+    discoElement.innerHTML = "<span style='font-weight: bold'>Disco: </span> <span style='color: red'>" + numeroAleatorioDisco + "%</span>";
+} else if (numeroAleatorioDisco < 40) {
+    discoElement.innerHTML = "<span style='font-weight: bold'>Disco: </span> <span style='color: green'>" + numeroAleatorioDisco + "%</span>";
+} else {
+    discoElement.innerHTML = "<span style='font-weight: bold'>Disco: </span> <span style='color: yellow'>" + numeroAleatorioDisco + "%</span>";
+}
 
-// // Lógica para definir a cor do texto para a RAM
-// if (numeroAleatorioRAM > 80) {
-//     ramElement.innerHTML = "RAM: <span style='color: red'>" + numeroAleatorioRAM + "%</span>";
-// } else if (numeroAleatorioRAM < 55) {
-//     ramElement.innerHTML = "RAM: <span style='color: green'>" + numeroAleatorioRAM + "%</span>";
-// } else {
-//     ramElement.innerHTML = "RAM: <span style='color: yellow'>" + numeroAleatorioRAM + "%</span>";
-// }
+// Lógica para definir a cor do texto para a RAM
+if (numeroAleatorioRAM > 80) {
+    ramElement.innerHTML = "<span style='font-weight: bold'>Ram: </span> <span style='color: red'>" + numeroAleatorioRAM + "%</span>";
+} else if (numeroAleatorioRAM < 55) {
+    ramElement.innerHTML = "<span style='font-weight: bold'>Ram: </span> <span style='color: green'>" + numeroAleatorioRAM + "%</span>";
+} else {
+    ramElement.innerHTML = "<span style='font-weight: bold'>Ram: </span> <span style='color: yellow'>" + numeroAleatorioRAM + "%</span>";
+}
 
-// // Lógica para definir a cor do texto para a Rede
-// if (numeroAleatorioRede > 75) {
-//     redeElement.innerHTML = "Rede: <span style='color: red'>" + numeroAleatorioRede + "%</span>";
-// } else if (numeroAleatorioRede < 40) {
-//     redeElement.innerHTML = "Rede: <span style='color: green'>" + numeroAleatorioRede + "%</span>";
-// } else {
-//     redeElement.innerHTML = "Rede: <span style='color: yellow'>" + numeroAleatorioRede + "%</span>";
-// }
-// }
+// Lógica para definir a cor do texto para a Rede
+if (numeroAleatorioRede > 75) {
+    redeElement.innerHTML = "<span style='font-weight: bold'>Rede: </span> <span style='color: red'>" + numeroAleatorioRede + "%</span>";
+} else if (numeroAleatorioRede < 40) {
+    redeElement.innerHTML = "<span style='font-weight: bold'>Rede: </span> <span style='color: green'>" + numeroAleatorioRede + "%</span>";
+} else {
+    redeElement.innerHTML = "<span style='font-weight: bold'>Rede: </span> <span style='color: yellow'>" + numeroAleatorioRede + "%</span>";
+}
+}
 
 
-// // Intervalo de 5 segundos para atualizar as salas
-// setInterval(function () {
-//     const miniContainerSalas = document.getElementById("miniContainerSalas");
-//     const salas = miniContainerSalas.querySelectorAll(".salas");
+// Intervalo de 5 segundos para atualizar as salas
+setInterval(function () {
+    const miniContainerSalas = document.getElementById("miniContainerSalas");
+    const salas = miniContainerSalas.querySelectorAll(".salas");
 
-//     salas.forEach(function (sala) {
-//         const numeroAleatorioCPU = Math.floor(Math.random() * 100) + 1;
-//         const numeroAleatorioRAM = Math.floor(Math.random() * 100) + 1;
-//         const numeroAleatorioRede = Math.floor(Math.random() * 100) + 1;
-//         const numeroAleatorioDisco = Math.floor(Math.random() * 100) + 1;
-//         atualizarNumeroAleatorio(sala, numeroAleatorioCPU, numeroAleatorioRAM, numeroAleatorioRede, numeroAleatorioDisco );
-//     });
-// }, 5000); // 5 segundos
+    salas.forEach(function (sala) {
+        const numeroAleatorioCPU = Math.floor(Math.random() * 100) + 1;
+        const numeroAleatorioRAM = Math.floor(Math.random() * 100) + 1;
+        const numeroAleatorioRede = Math.floor(Math.random() * 100) + 1;
+        const numeroAleatorioDisco = Math.floor(Math.random() * 100) + 1;
+        atualizarNumeroAleatorio(sala, numeroAleatorioCPU, numeroAleatorioRAM, numeroAleatorioRede, numeroAleatorioDisco );
+    });
+}, 1000); // 5 segundos

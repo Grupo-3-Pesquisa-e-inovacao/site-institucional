@@ -63,10 +63,11 @@
 }
 
 .salas {
-    padding: 3px;
+    padding: 5px;
     display: flex;
     flex-direction: column;
-    width: 30%;
+    width: 32%;
+    height: 20vh;
     border: 1px solid #0F3324;
     border-radius: 10px;
     background-color: white;
@@ -74,6 +75,7 @@
     align-items: center;
     cursor: pointer;
     margin-bottom: 30px;
+    font-size: 14px;
 }
 
 
@@ -82,6 +84,7 @@
     display: flex;
     flex-direction: column;
     width: 30%;
+    height: 26vh;
     border: 1px solid #0F3324;
     border-radius: 10px;
     background-color: rgba(128, 128, 128, 0.24);
@@ -99,18 +102,95 @@
 .nomeSala{
     height: 20%;
     width: 100%;
-}
-
-.Alerta{
     display: flex;
-    height: 80%;
-    width: 100%;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bold;
 }
 
+.salas a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.infopc-infostatus{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 90%;
+    
+}
+
+.valores-iconeAlertaStatus{
+    display: flex;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.iconeAlertaStatus{
+    width: 30%;
+    height: 100%;
+    background-color: red;
+}
+
+
+.infopc{
+    display: flex;
+    flex-direction: column;
+    width: 49%;
+    height: 100%;
+    
+}
+
+.iconePC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 35%;
+}
+
+
+.iconePC img{
+    width: 60%;
+    height: 80%;
+}
 .info{
     display: flex;
     flex-direction: column;
-    width: 1;
+    justify-content: center;
+    width: 100%;
+    height: 60%;
+    
+}
+
+.infostatus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    height: 100%;
+    justify-content: space-between;
+    
+}
+
+.tituloStatus {
+    display: flex;
+    font-weight: bold;
+    height: 20%;
+    width: 100%;
+    justify-content: center;
+}
+
+.valoresResgistros{
+    display: flex;
+    flex-direction: column;
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 87%;
 }
 
 .iconAlerta{
@@ -122,14 +202,9 @@
     height: 50%;
 }
 
-.nomeSala{
-    display: flex;
-    justify-content: center;
-    font-size: 16px;
-    font-weight: bold;
-}
-
 .dados {
+    border: 1px solid black;
+    border-radius: 10px;
     height: 80%;
     width: 100%;
 }
@@ -243,6 +318,7 @@ height: 100%;
 }
 
 .conteudoForm input{
+    width: 100%;
     height: 30px;
     border-radius: 0px;
     border: none;

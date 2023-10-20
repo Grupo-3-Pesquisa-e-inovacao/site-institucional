@@ -3,6 +3,8 @@
     margin: 0;
     border: 0;
     font-family: Arial;
+    text-decoration: none;
+    color: black;
 }
 
 
@@ -15,6 +17,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    
 }
 
 .containerSalas {
@@ -328,7 +331,7 @@ height: 100%;
 }
 
 .conteudoForm input{
-    height: 30px;
+    height: 100%;
     border-radius: 0px;
     border: none;
     border-bottom: 1px solid #0F3324;
