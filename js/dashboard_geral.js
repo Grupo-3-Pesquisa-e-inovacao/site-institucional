@@ -22,7 +22,7 @@ var barChart = new Chart(barCtx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Gráfico de alertas ao longo do dia', // Aqui você define o título desejado
+                text: 'Quantidade de alertas ao longo do dia', // Aqui você define o título desejado
                 font: {
                     size: 16,
                     color: '#000',
