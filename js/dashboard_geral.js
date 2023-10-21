@@ -2,12 +2,12 @@ var barData = {
     labels: ["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00"],
     datasets: [
         {
-            label: "Entrando em perigo",
+            label: "Alerta",
             data: [40, 20, 150, 100, 40, 260, 356, 200, 170, 160, 190, 340, 40, 20],
             backgroundColor: '#DAC617',
         },
         {
-            label: "Perigoso",
+            label: "Crítico",
             data: [40, 20, 150, 100, 40, 260, 356, 200, 170, 160, 190, 340, 40, 20],
             backgroundColor: '#FF0000',
         }
