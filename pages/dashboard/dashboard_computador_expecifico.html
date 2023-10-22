@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Computadores | Expecífico</title>
     <link rel="stylesheet" href="../../style/dashboard/header_footer.css">
-    <link rel="stylesheet" href="../../style/dashboard/computadores_expecifico.css">
+    <link rel="stylesheet" href="../../style/dashboard/computador_expecifico.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
 
             <ul class="help-info">
                 <li>Lista de alertas</li>
-                <li><img src="../../assets/assets-dashboard/dangerous.svg" alt="">
+                <li><img src="../../assets/assets-dashboard/alert-amarelo.svg" alt="">
                     <p> - Alerta critico</p>
                 </li>
                 <li><img src="../../assets/assets-dashboard/alert-amarelo.svg" alt="">
@@ -37,8 +37,12 @@
     <div class="menu-mobile" id="menu-mobile">
         <ul class="icons">
             <li onclick="showHelp()">?</li>
-            <li><img src="../../assets/assets-dashboard/cog.png" alt=""><a href="dashboard_configuracoes.html"></a></li>
-            <li><img src="../../assets/assets-dashboard/user.png" alt=""><a href=""></a></li>
+            <li><img src="../../assets/assets-dashboard/cog.png" alt="">
+                <a href="./dashboard_configuracoes.html"></a>
+            </li>
+            <li><img src="../../assets/assets-dashboard/user.png" alt="">
+                <a href=""></a>
+            </li>
         </ul>
         <a href="">Inicio</a>
         <a href="">Dash geral</a>
@@ -65,6 +69,7 @@
             </div>
             <div class="icon">
                 <img src="../../assets/assets-dashboard/user.png" alt="">
+                <a href=""></a>
             </div>
         </div>
 
@@ -207,6 +212,8 @@
 </body>
 
 </html>
+
+<script src="../../js/computador_expecifico.js"></script>
 
 <script>
     let helpScreen = document.getElementById("help-screen")

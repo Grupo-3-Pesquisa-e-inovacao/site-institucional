@@ -13,6 +13,7 @@
     border-top: 1px solid rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    background-image: url(../../assets/gradiente_inicio.png);
 }
 
 .div_dashboard_geral{
@@ -21,6 +22,8 @@
     border-radius: 10px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.96);
+    backdrop-filter: blur(3px);
 }
 
 .container_fotter{

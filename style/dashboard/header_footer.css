@@ -28,6 +28,8 @@ header {
   border-top: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
   z-index: 99;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(3px);
 }
 
 header .logo {
@@ -70,7 +72,7 @@ header .links a {
   color: black;
   font-size: 16px;
   text-align: center;
-  text-transform: lowercase;
+  text-transform: capitalize;
   animation: all .2s ease-in-out;
   font-family: Montserrat;
   font-weight: 400;
@@ -321,7 +323,7 @@ footer {
 footer p {
   color: black;
   font-size: 14px;
-  text-transform: lowercase;
+  text-transform: capitalize;
   text-align: center;
 }
 
