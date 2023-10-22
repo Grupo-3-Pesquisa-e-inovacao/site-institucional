@@ -1,11 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    border: 0;
-    font-family: Arial;
-}
-
-
 #ConteudoSite {
     display: flex;
     align-items: center;

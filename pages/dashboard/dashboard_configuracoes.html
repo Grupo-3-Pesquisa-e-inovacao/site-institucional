@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Salas | dashboard</title>
-    <link rel="stylesheet" href="../../style/dashboard/visao_salas.css">
+    <title>Document</title>
     <link rel="stylesheet" href="../../style/dashboard/header_footer.css">
+    <link rel="stylesheet" href="../../style/dashboard/configuracoes.css">
 </head>
-
 <body>
     <!-- Inicio dos itens da header -->
     <div class="help-screen" id="help-screen">
@@ -65,6 +63,7 @@
             </div>
             <div class="icon">
                 <img src="../../assets/assets-dashboard/user.png" alt="">
+                <a href=""></a>
             </div>
         </div>
 
@@ -76,91 +75,54 @@
     </header>
     <!-- Fim dos itens da header -->
 
-    <div id="ConteudoSite">
-
-        <div id="modal" class="modal">
-            <div class="tituloModal">
-                Adicione sua sala
-            </div>
-            <div class="conteudoModal">
-
-
-                <div class="form">
-                    <div class="conteudoForm">
-                        <div class="nomeDaSala">
-                            Nome da sala:
-                        </div>
-                        <div class="inputNomeSala">
-                            <input type="text" name="" id="inputNomeSala">
-                        </div>
-
-
-                        <div class="nomeDaSala">
-                            Quantidade de dispositivos:
-                        </div>
-                        <div class="inputNomeSala">
-                            <input type="number" name="" id="inputQuantidadeDispositivos">
-                        </div>
-
-
-                        <div class="divButtonAddSala">
-                            <button class="buttonAddSala" onclick="adicionarSala()">
-                                Adicionar Sala
-                            </button>
-
-                            <button class="buttonCancelarAddSala" onclick="fecharModal()">
-                                Cancelar
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
+    <div class="config">
+        <div class="config-alerta">
+            <h1>Quando emitir um alerta vermelho?</h1>
+            <ul>
+                <li>
+                    <label for="cpu">CPU</label>
+                    <input type="range" id="cpu" name="cpu" min="1" max="100">
+                </li>
+                <li>
+                    <label for="ram">Meoria RAM</label>
+                    <input type="range" id="ram" name="ram" min="1" max="100">
+                </li>
+                <li>
+                    <label for="disco">Disco</label>
+                    <input type="range" id="disco" name="disco" min="1" max="100">
+                </li>
+                <li>
+                    <label for="rede">Rede</label>
+                    <input type="range" id="rede" name="rede" min="1" max="100">
+                </li>
+            </ul>
         </div>
-
-        <div class="containerSalas" id="containerSalas">
-            <div class="titulo-menuFiltros">
-                <div class="titulo">
-                    Salas
-                </div>
-                <div class="menuFiltros">
-                    <img id="menuHamburguer" src="../../assets/assets-dashboard/menu-fill.svg" alt="">
-                </div>
-            </div>
-
-            <div class="miniContainerSalas" id="miniContainerSalas">
-
-            </div>
-
-            <div class="addSala">
-                <div class="divDentroAddSala">
-                    <a href="javascript:void(0);" onclick="abrirModal()">
-                        <img id="iconeDeMais" src="../../assets/assets-dashboard/plus.svg">
-                        <div class="mensagem">Adicionar Sala</div>
-                    </a>
-                </div>
-            </div>
+        <div class="config-alerta">
+            <h1>Quando emitir um alerta amarelo?</h1>
+            <ul>
+                <li>
+                    <label for="cpu">CPU</label>
+                    <input type="range" id="cpu" name="cpu" min="1" max="100">
+                </li>
+                <li>
+                    <label for="ram">Meoria RAM</label>
+                    <input type="range" id="ram" name="ram" min="1" max="100">
+                </li>
+                <li>
+                    <label for="disco">Disco</label>
+                    <input type="range" id="disco" name="disco" min="1" max="100">
+                </li>
+                <li>
+                    <label for="rede">Rede</label>
+                    <input type="range" id="rede" name="rede" min="1" max="100">
+                </li>
+            </ul>
         </div>
     </div>
 
     <footer>
         <p>Safe Monitor - 2023 - Todos direitos reservados</p>
     </footer>
+    
 </body>
-
 </html>
-<script src="../../js/visao_salas.js"></script>
-
-<script>
-    let helpScreen = document.getElementById("help-screen")
-    let menuMobile = document.getElementById("menu-mobile")
-
-    function showHelp() {
-        helpScreen.classList.toggle("visible")
-    }
-
-    function showMenu() {
-        menuMobile.classList.toggle("visible")
-    }
-</script>
