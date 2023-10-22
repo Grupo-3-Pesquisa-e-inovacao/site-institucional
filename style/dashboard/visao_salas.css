@@ -1,3 +1,8 @@
+*{
+    color: black;
+    text-decoration: none;
+}
+
 #ConteudoSite {
     padding: 80px 0px;
     display: flex;
